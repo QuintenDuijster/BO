@@ -5,7 +5,7 @@ const Header: React.FC = () =>
 {
     return (
         <header> {/* dit is de header voor de website! */}
-            <ul>
+            <ul className="lef">
                 <li>
                     <a href="http://localhost:5174">Logo</a>
                 </li>
@@ -24,9 +24,9 @@ const Header: React.FC = () =>
                     <span>Uitjes</span>
                     <div className="dropdown-content">
                         <ul>
-                            <li><a href="http://localhost:5174/OverNxt">Bedrijfsuitje</a></li>
-                            <li><a href="http://localhost:5174/OverNxt">Educatie</a></li>
-                            <li><a href="http://localhost:5174/OverNxt">Workshops</a></li>
+                            <li><a href="http://localhost:5174/Uitjes">Bedrijfsuitje</a></li>
+                            <li><a href="http://localhost:5174/Uitjes">Educatie</a></li>
+                            <li><a href="http://localhost:5174/Uitjes">Workshops</a></li>
                         </ul>
                     </div>
                 </li>
@@ -40,6 +40,9 @@ const Header: React.FC = () =>
                     </div>
                 </li>
                 <li><a href="http://localhost:5174/faq">faq</a></li>
+            </ul>
+            <ul className="right">
+                <li><a href="http://localhost:5174/Tickets">Tickets</a></li>
             </ul>
         </header>
     );

@@ -5,6 +5,7 @@ import App from './App.tsx';
 import Tickets from './Tickets.tsx';
 import OverNxt from './OverNxt.tsx';
 import Contact from './Contact.tsx';
+import Uitjes from './Uitjes.tsx';
 
 import './index.css'
 
@@ -17,6 +18,7 @@ export default function Router()
                 <Route path="Tickets" element={<Tickets />} />
                 <Route path="Contact" element={<Contact />} />
                 <Route path="OverNxt" element={<OverNxt />} />
+                <Route path="Uitjes" element={<Uitjes />} />
             </Routes>
         </BrowserRouter>
     );
