@@ -11,3 +11,18 @@ Afspraken over communicatie:
 
 - Als je iets niet af krijgt vraag de ander om hulp of maak het simpeler  
 
+
+
+Benodigdheden startpagina:
+
+- Geschiedenis museum in het kort
+
+- Overzicht van wat je kan doen & zien
+
+- Contactgegevens
+
+- Openingstijden 
+
+- Reviews van bezoekers
+
+
