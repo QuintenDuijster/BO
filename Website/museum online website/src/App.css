@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header {
+    background-color: black;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header ul li {
+    margin: 10px;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header ul li a {
+   color: white;
+   font-size: 24px;
 }
 
-.card {
-  padding: 2em;
+header ul li a:hover {
+    color: green;
 }
 
-.read-the-docs {
-  color: #888;
+header ul li span {
+    color: white;
+    font-size: 24px;
 }
+
+    header ul li span:hover {
+        color: green;
+        cursor: pointer
+    }
+
+
+.dropdown-1 div ul{
+    display: block;
+}
+
+.dropdown-2 div ul {
+    display: block;
+}
+
+#dropdown1-content{
+    display: none;
+}
+
+#dropdown2-content {
+    display: none;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-1:hover #dropdown1-content{
+    display: block;
+}
+
+.dropdown-2:hover #dropdown2-content {
+    display: block;
+} 
+
