@@ -1,15 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import Faq from './faq.tsx';
-import Nxt from './aboutNxt.tsx'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import App from './App.tsx';
+import Tickets from './Tickets.tsx';
 
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-    <React.StrictMode>
-        <Faq/>
-        <App />
-        <Nxt/>
-  </React.StrictMode>,
-)
+export default function Router()
+{
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route index element={<App />} />
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+ReactDOM.createRoot(document.getElementById('root')!).render(<Router />);
+

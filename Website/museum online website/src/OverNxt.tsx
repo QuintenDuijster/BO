@@ -1,15 +1,15 @@
 import React from 'react';
-import './Contact.css';
+import './OverNxt.css';
 import Header from './Herbruikbaar/Header.tsx';
 
 
-const Contact: React.FC = () =>
+const OverNxt: React.FC = () =>
 {
     return (
-        <div className="Contact">
+        <div className="OverNxt">
             <Header />
         </div>
     );
 };
 
-export default Contact;
+export default OverNxt;

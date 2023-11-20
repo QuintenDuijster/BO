@@ -1,15 +1,15 @@
 import React from 'react';
-import './Contact.css';
+import './Tickets.css';
 import Header from './Herbruikbaar/Header.tsx';
 
 
-const Contact: React.FC = () =>
+const Tickets: React.FC = () =>
 {
     return (
-        <div className="Contact">
+        <div className="Tickets">
             <Header />
         </div>
     );
 };
 
-export default Contact;
+export default Tickets;
