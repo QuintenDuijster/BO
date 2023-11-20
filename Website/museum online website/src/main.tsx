@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from './App.tsx';
 import Tickets from './Tickets.tsx';
+import OverNxt from './OverNxt.tsx';
+import Contact from './Contact.tsx';
 
 import './index.css'
 
@@ -12,6 +14,9 @@ export default function Router()
         <BrowserRouter>
             <Routes>
                 <Route index element={<App />} />
+                <Route path="Tickets" element={<Tickets />} />
+                <Route path="Contact" element={<Contact />} />
+                <Route path="OverNxt" element={<OverNxt />} />
             </Routes>
         </BrowserRouter>
     );

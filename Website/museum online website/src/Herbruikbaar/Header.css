@@ -1,4 +1,5 @@
 header {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
 
@@ -16,22 +17,21 @@ header {
 
             header ul li a {
                 color: white;
-                font-size: 24px;
+                font-size: 20px;
             }
 
                 header ul li a:hover {
-                    color: green;
+                    color: white;
                 }
 
-            header ul li span {
-                color: white;
-                font-size: 24px;
-            }
+header ul li span {
+    color: white;
+    font-size: 20px;
+}
 
-                header ul li span:hover {
-                    color: green;
-                    cursor: pointer
-                }
+header ul li span:hover {
+    cursor: pointer
+}
 
 .dropdown div ul {
     display: block;
