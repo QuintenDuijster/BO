@@ -1,6 +1,11 @@
 # BO
 ___
 
+Trello planning:
+
+https://trello.com/b/cWPuKs9n/website
+
+
 Afspraken over communicatie: 
 
  
