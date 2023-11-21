@@ -11,7 +11,7 @@ const App: React.FC = () =>
             <Header />
             <main>
                 <div className="Header">
-                    <img className="Background" src="Images/AppBackground.png" width="1910" height="1000" alt="Example" />
+                    <img className="Background" src="Images/AppBackground.png" alt="Example" />
                     <div>
                         <div>
                             <h1>Nxt Museum</h1>
@@ -71,21 +71,21 @@ const App: React.FC = () =>
                         <a>Meer Over Nxt</a>
                     </div>
                 </div>
-                <div className="reviews">
-                    <div className="review">
-                        <h3>review</h3>
-                        <p>text</p>
-                    </div>
-                    <div className="review">
-                        <h3>review</h3>
-                        <p>text</p>
-                    </div>
-                    <div className="review">
-                        <h3>review</h3>
-                        <p>text</p>
-                    </div>
-                    <a>reviews</a>
-                </div>
+                {/*<div className="reviews">*/}
+                {/*    <div className="review">*/}
+                {/*        <h3>review</h3>*/}
+                {/*        <p>text</p>*/}
+                {/*    </div>*/}
+                {/*    <div className="review">*/}
+                {/*        <h3>review</h3>*/}
+                {/*        <p>text</p>*/}
+                {/*    </div>*/}
+                {/*    <div className="review">*/}
+                {/*        <h3>review</h3>*/}
+                {/*        <p>text</p>*/}
+                {/*    </div>*/}
+                {/*    <a>reviews</a>*/}
+                {/*</div>*/}
             </main>
             <Footer />
         </div>

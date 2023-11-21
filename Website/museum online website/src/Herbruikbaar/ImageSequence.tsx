@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
+
 const ImageLoader: React.FC = () =>
 {
     const canvasRef = useRef<HTMLCanvasElement>(null);
