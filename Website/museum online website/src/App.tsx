@@ -12,38 +12,58 @@ const App: React.FC = () =>
             <main>
                 <div className="Header">
                     <h2>Nxt Museum</h2>
-                    <p>introductie text</p>
+                    <p>
+                        Het eerste museum in Nederland dat zich volledig richt op mediakunst. <br />
+                        Ontdek grootschalige, digitale kunstinstallaties die je blik verruimen en de zintuigen op scherp stellen. <br />
+                        De kunst van morgen, vandaag.
+                    </p>
                     <canvas className="slideShow" />
                 </div>
                 <div className="info">
                     <div className="infoBox">
-                        <h2>Informatie over nxt</h2>
-                        <p>Waarom de tentoonstellingen houden/ motivatie </p>
+                        <h2>Wat is Nxt?</h2>
+                        <p>
+                            Nxt Museum is het eerste museum in Nederland dat zich volledig richt op mediakunst.
+                            We exposeren kunstwerken die gebruik maken van moderne technologieën van het heden en van de toekomst.
+                            Omdat kunst de tijdsgeest weerspiegelt,
+                            geloven wij dat de meest innovatieve kunst ons de mogelijkheid geeft om op de impact van technologische ontwikkelingen te reflecteren.
+                            Een moment van bezinning in een realiteit die alsmaar sneller doorontwikkelt.
+                        </p>
                         <a>Tentoonstellingen</a>
                     </div>
                     <div className="infoBox">
                         <h2>Openingstijden</h2>
                         <ul>
-                            <li>Maandag: 10:00/20:00</li>
-                            <li>Dinsdag: 10:00/20:00</li>
-                            <li>Woensdag: 10:00/20:00</li>
-                            <li>Donderdag: 10:00/20:00</li>
-                            <li>Vrijdag: 10:00/20:00</li>
-                            <li>Zaterdag: 10:00/20:00</li>
-                            <li>Zondag: 10:00/20:00</li>
+                            <li>Dinsdag: 10:30 - 20:30</li>
+                            <li>Woensdag: 11:00 - 21:30</li>
+                            <li>Donderdag: 10:30 - 22:30</li>
+                            <li>Zaterdag: 10:30 - 20:30</li>
+                            <li>Zondag: 10:30 - 22:30</li>
                         </ul>
                         <a>Contact</a>
                     </div>
                 </div>
                 <div className="info">
                     <div className="infoBox">
-                        <h2>Informatie over nxt</h2>
-                        <p>Toekomst/visie nxt</p>
+                        <h2>De ruimte</h2>
+                        <p>
+                            Het museum is gevestigd in een voormalige productiestudio in het hart van Amsterdam-Noord – een plek die zich bij uitstek leent voor het ontdekken,
+                            maken en tentoonstellen van mediakunst.
+                            Deze vorm van kunst experimenteert met technologische mogelijkheden en toepassingen; dynamisch en niet gebonden aan een vorm.
+                            Onze  ruimte biedt een broedplaats voor deze vorm van kunst; een plek waar verschillende kunststromingen en wetenschappen samenkomen en tentoongesteld kunnen worden.
+                            Een plek voor live performances, educatie, creatie, zang, dans en meer.
+                        </p>
                         <a>Meer Over Nxt</a>
                     </div>
                     <div className="infoBox">
-                        <h2>Informatie over nxt</h2>
-                        <p>Bouw/open jaar</p>
+                        <h2>Onze missie</h2>
+                        <p>
+                            Het is onze missie om vooruitstrevende vormen van creativiteit te stimuleren.
+                            Wij zien de toekomst als een van de meest fascinerende concepten van het menselijk brein.
+                            Het is een onuitputtelijke bron van inspiratie die ons in de greep houdt en de vraag oproept: ‘What’s Nxt?’.
+                            Met het oog op technologische en sociale ontwikkelingen is deze vraag een groter mysterie dan ooit tevoren.
+                            Ga je mee op zoek naar het antwoord?
+                        </p>
                         <a>Meer Over Nxt</a>
                     </div>
                 </div>
