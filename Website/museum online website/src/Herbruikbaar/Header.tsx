@@ -40,7 +40,7 @@ const Header: React.FC = () =>
                         </ul>
                     </div>
                 </li>
-                <li><a href="faq">faq</a></li>
+                <li><a href="faq">Faq</a></li>
             </ul>
             <ul className="right">
                 <li><a href="Tickets">Tickets</a></li>

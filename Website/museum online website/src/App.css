@@ -22,20 +22,20 @@ main {
     margin: auto
 }
 
-.Header {
+.HeaderOfLandingPage {
     margin-top: 100px;
     display: flex;
     text-align: center;
 }
 
-.Header div p{
-    margin-left: 90px;
-    margin-right: 90px;
-    text-align: left;
+.HeaderOfLandingPage div p {
+        margin-left: 90px;
+        margin-right: 90px;
+        text-align: left;
 }
 
-.Header h1{
-    font-size: 50px;
+.HeaderOfLandingPage h1 {
+        font-size: 50px;
 }
 
 .slideShow {

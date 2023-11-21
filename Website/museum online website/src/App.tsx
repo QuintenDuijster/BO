@@ -10,7 +10,7 @@ const App: React.FC = () =>
         <div className="App">
             <Header />
             <main>
-                <div className="Header">
+                <div className="HeaderOfLandingPage">
                     <div>
                         <h1>Nxt Museum</h1>
                         <p>

@@ -7,14 +7,14 @@ const Footer: React.FC = () =>
         <footer>
             <ul>
                 <li>
-                    <h3>Address Asterweg</h3>
+                    <h3>Postbus:</h3>
                     <p>Asterweg 22</p>
                     <p>1031 HP Amsterdam</p>
                 </li>
                 <li>
-                    <h3>neem Contect op</h3>
-                    <p>phone number</p>
-                    <p>Email</p>
+                    <h3>Neem Contact op</h3>
+                    <p>Telefoonnummer: 727-425-2760</p>
+                    <p>Email: info@nxtmuseum.com</p>
                 </li>
             </ul>
 
