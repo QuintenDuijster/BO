@@ -46,7 +46,7 @@ const ImageLoader: React.FC = () =>
 
     return (
         <div>
-            <canvas ref={canvasRef} width={400} height={300} />
+            <canvas ref={canvasRef} width={600} height={450} />
         </div>
     );
 };

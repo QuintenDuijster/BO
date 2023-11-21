@@ -11,12 +11,15 @@ const App: React.FC = () =>
             <Header />
             <main>
                 <div className="Header">
-                    <h2>Nxt Museum</h2>
-                    <p>
-                        Het eerste museum in Nederland dat zich volledig richt op mediakunst. <br />
-                        Ontdek grootschalige, digitale kunstinstallaties die je blik verruimen en de zintuigen op scherp stellen. <br />
-                        De kunst van morgen, vandaag.
-                    </p>
+                    <div>
+                        <h1>Nxt Museum</h1>
+                        <p>
+                            Het eerste museum in Nederland dat zich volledig richt op mediakunst. <br />
+                            Ontdek grootschalige, digitale kunstinstallaties die je blik verruimen <br />
+                            en de zintuigen op scherp stellen. De kunst van morgen, vandaag.
+                            
+                        </p>
+                    </div>
                     <ImageSequence />
                 </div>
                 <div className="info">
