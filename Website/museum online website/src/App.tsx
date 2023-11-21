@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './Herbruikbaar/hoverLink.css';
 import Header from './Herbruikbaar/Header.tsx';
 import Footer from './Herbruikbaar/Footer.tsx';
 import ImageSequence from './Herbruikbaar/ImageSequence.tsx';
@@ -12,7 +13,7 @@ const App: React.FC = () =>
             <main>
                 <div className="Header">
                     <img className="Background" src="Images/AppBackground.png" alt="Example" />
-                    <div>
+                    <div className="Header-contant">
                         <div>
                             <h1>Nxt Museum</h1>
                             <p>

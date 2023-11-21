@@ -4,36 +4,40 @@ footer {
     margin-top: 5px;
 }
 
+    footer div {
+        margin: auto;
+        width: 90%;
+    }
+
 .subPages{
     display: flex;
     font-size: 22px;
-    margin: auto;
-    width: 70%;
+    margin-left: 120px;
 }
 
 .subPages ul {
     list-style: none;
-    margin-right: 140px;
+    margin-right: 160px;
 }
 
-.subPages ul li{
-    margin: 4px;
-}
+    .subPages ul li {
+        margin: 4px;
+        margin-right: 40px;
+    }
 
 .subPages ul li a{
-    color: white;
+    color: white
 }
 
 .information {
     display: flex;
     font-size: 22px;
-    margin: auto;
-    width: 80%;
+    margin-left: 250px;
 }
 
 .information ul {
     list-style: none;
-    margin-right: 140px;
+    margin-right: 160px;
 }
 
 .information ul li {
@@ -47,7 +51,7 @@ footer {
 .line{
     background-color: white;
     height: 5px;
-    width: 180px;
+    width: 200px;
 }
 
 

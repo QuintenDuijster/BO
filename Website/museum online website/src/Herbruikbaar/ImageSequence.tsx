@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-
-const ImageLoader: React.FC = () =>
+const ImageSequence: React.FC = () =>
 {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const images: string[] = [
@@ -47,9 +46,18 @@ const ImageLoader: React.FC = () =>
 
     return (
         <div>
-            <canvas ref={canvasRef} width={600} height={450} />
+            {/* Apply inline style to add a border */}
+            <canvas
+                ref={canvasRef}
+                width={600}
+                height={450}
+                style={{
+                    border: '5px solid black',
+                    borderRadius: '25px' // Adjust the border-radius value for the desired amount of rounding
+                }}
+            />
         </div>
     );
 };
 
-export default ImageLoader;
+export default ImageSequence;

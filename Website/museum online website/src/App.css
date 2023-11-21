@@ -5,8 +5,8 @@ main {
 
 .Header {
     position: relative;
-    width: 100%; /* Set the width of your header */
-    height: 500px; /* Set the height of your header */
+    width: 100%; 
+    height: 500px;
     margin-bottom: 600px;
 }
 
@@ -16,21 +16,31 @@ main {
     left: 0;
     width: 100%;
     height: 220%;
-    object-fit: cover; /* Adjust how the image is fitted within the container */
-    z-index: 0; /* Push the image behind the content */
+    object-fit: cover; 
+    z-index: 0; 
     background-image: linear-gradient(#9438C9, #63218C, black);
     padding-bottom: 100px;
 }
 
-.Header > div {
+.Header-contant {
     display: flex;
     position: relative;
-    z-index: 1; /* Ensure the content is on top of the image */
+    z-index: 1;
     padding: 20px;
-    color: #fff; /* Example color for text */
+    color: #fff;
     margin: auto;
-    width: 50%;
+    width: 140%;
     padding-top: 180px;
+    margin-right: 100px;
+}
+
+.Header-contant div{
+    margin-left: 120px;
+    margin-right: 200px;      
+}
+
+.Header-contant div p {
+    font-size: 22px;
 }
 
 
@@ -80,3 +90,4 @@ main {
     background-color: black;
     margin: 20px;
 }
+
