@@ -9,7 +9,7 @@ const Tickets: React.FC = () =>
     return (
         <div className="Tickets">
             <Header />
-
+            <h1> sup</h1>
             <Footer />
         </div>
     );
