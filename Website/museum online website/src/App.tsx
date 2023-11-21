@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Herbruikbaar/Header.tsx';
 import Footer from './Herbruikbaar/Footer.tsx';
-
+import ImageSequence from './Herbruikbaar/ImageSequence.tsx';
 
 const App: React.FC = () =>
 {
@@ -17,7 +17,7 @@ const App: React.FC = () =>
                         Ontdek grootschalige, digitale kunstinstallaties die je blik verruimen en de zintuigen op scherp stellen. <br />
                         De kunst van morgen, vandaag.
                     </p>
-                    <canvas className="slideShow" />
+                    <ImageSequence />
                 </div>
                 <div className="info">
                     <div className="infoBox">

@@ -12,13 +12,9 @@ main {
     text-align: center;
 }
 
-    .infoBox p {
-        text-align: left;
-    }
+    .infoBox p { text-align: left; }
 
-.infoBox ul {
-    display: block;
-}
+.infoBox ul { display: block; }
 
 .info {
     display: flex;
