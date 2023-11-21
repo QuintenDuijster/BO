@@ -3,68 +3,75 @@ main {
     background-color: #2e2e2e;
 }
 
-.infoBox {
-    background-color: black;
-    display: block;
-    margin: 10px;
-    padding: 15px;
-    width: 50%;
-    text-align: center;
-}
-
-    .infoBox p { text-align: left; }
-
-.infoBox ul { display: block; }
-
-.info {
-    display: flex;
-    width: 50%;
-    margin: auto
-}
-
 .Header {
-    margin-top: 100px;
+    position: relative;
+    width: 100%; /* Set the width of your header */
+    height: 500px; /* Set the height of your header */
+    margin-bottom: 600px;
+}
+
+.Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220%;
+    object-fit: cover; /* Adjust how the image is fitted within the container */
+    z-index: 0; /* Push the image behind the content */
+}
+
+.Header > div {
     display: flex;
+    position: relative;
+    z-index: 1; /* Ensure the content is on top of the image */
+    padding: 20px;
+    color: #fff; /* Example color for text */
+    margin: auto;
+    width: 50%;
+    padding-top: 180px;
+}
+
+
+.info{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 120px;
+}
+
+.infoBox{
+    width: 40%;
+    margin-top: -15px;
+}
+
+.infoBox h2 {
+    font-size: 30px;
+    display: block;
+    text-decoration: underline;
+}
+
+.infoBox ul{
+    display: block;  
+    margin-left: -40px;
+}
+
+#right{
+    padding-left: 1100px;
+}
+
+#left {
+    padding-left: 80px;
+}
+
+.reviews{
+    width: 30%;
+    margin: auto;   
+    border: 1px solid black;
     text-align: center;
 }
 
-.Header div p{
-    margin-left: 90px;
-    margin-right: 90px;
+.review{
     text-align: left;
-}
-
-.Header h1{
-    font-size: 50px;
-}
-
-.slideShow {
-    width: 45%;
-    margin-bottom: 30px;
-    border: 10px solid black;
-}
-
-
-.reviews {
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 48.5%;
-    padding: 5px;
     background-color: black;
+    margin: 20px;
 }
-
-    .reviews a {
-        margin: auto;
-        display: flex;
-        width: 0%;
-    }
-
-.review {
-    background-color: #2e2e2e;
-    margin: 5px;
-}
-
-
