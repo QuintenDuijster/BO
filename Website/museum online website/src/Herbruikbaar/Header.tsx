@@ -24,7 +24,7 @@ const Header: React.FC = () =>
                     </a>
                 </li>
                 <li className="dropdown" id="aLink">
-                    <span>Over Nxt</span>
+                    <span><a href="OverNxt">Over Nxt</a></span>
                     <div className="dropdown-content">
                         <ul>
                             <li><a className="hoverLink" href="OverNxt">Reviews</a></li>
@@ -35,7 +35,7 @@ const Header: React.FC = () =>
                     </div>
                 </li>
                 <li className="dropdown" id="aLink">
-                    <span>Uitjes</span>
+                    <span><a href="Uitjes">Uitjes</a></span>
                     <div className="dropdown-content">
                         <ul>
                             <li><a className="hoverLink"  href="Uitjes">Bedrijfsuitje</a></li>
@@ -45,7 +45,7 @@ const Header: React.FC = () =>
                     </div>
                 </li>
                 <li className="dropdown" id="aLink">
-                    <span>Contact</span>
+                    <span><a href="Contact">Contact</a></span>
                     <div className="dropdown-content">
                         <ul>
                             <li><a className="hoverLink" href="Contact">Routeomschrijving</a></li>

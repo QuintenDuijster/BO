@@ -3,7 +3,6 @@ import './App.css';
 import './Herbruikbaar/hoverLink.css';
 import Header from './Herbruikbaar/Header.tsx';
 import Footer from './Herbruikbaar/Footer.tsx';
-import ImageSequence from './Herbruikbaar/ImageSequence.tsx';
 
 const App: React.FC = () =>
 {
@@ -23,7 +22,6 @@ const App: React.FC = () =>
 
                             </p>
                         </div>
-                        <ImageSequence />
                     </div>
                 </div>
                 <div className="info">
