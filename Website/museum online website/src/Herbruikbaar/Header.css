@@ -1,34 +1,38 @@
 
 
 header {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
-        background-color: black;
+    background: black;
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 9%;
+    z-index: 2;
+    opacity: 0.98;
 }
 
-    header ul {
-        list-style: none;
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-    }
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
 
-    header ul li {
-            margin: 10px;
-            padding: 10px;
-        }
+header ul li {
+    margin: 10px;
+    padding: 10px;
+}
 
-            header ul li a {
-                color: white;
-                font-size: 20px;
-            }
+header ul li a {
+    color: white;
+    font-size: 20px;
+}
 
-                ul li a:hover {
-                    color: white;
-                }
+ul li a:hover {
+    color: white;
+}
 
 header ul li span {
     color: white;
@@ -55,4 +59,20 @@ header ul li span:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.Logo {
+    display: flex;
+}
+
+.Logo p{
+    margin-top: 14px;
+}
+
+#aLink {
+    margin-top: 25px;
+}
+
+.right{
+    margin-left: 1050px;
 }

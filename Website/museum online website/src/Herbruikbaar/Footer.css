@@ -1,14 +1,57 @@
-footer{
+footer {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    margin-top: 5px;
 }
 
-ul {
-    list-style: none;
+    footer div {
+        margin: auto;
+        width: 90%;
+    }
+
+.subPages{
     display: flex;
-    margin: 20px;
+    font-size: 22px;
+    margin-left: 120px;
 }
 
-li{
-    margin-right: 30px;
-    font-size: 18px;
+.subPages ul {
+    list-style: none;
+    margin-right: 160px;
 }
+
+    .subPages ul li {
+        margin: 4px;
+        margin-right: 40px;
+    }
+
+.subPages ul li a{
+    color: white
+}
+
+.information {
+    display: flex;
+    font-size: 22px;
+    margin-left: 250px;
+}
+
+.information ul {
+    list-style: none;
+    margin-right: 160px;
+}
+
+.information ul li {
+    margin: 4px;
+}
+
+.information ul li a {
+    color: white;
+}
+
+.line{
+    background-color: white;
+    height: 5px;
+    width: 200px;
+}
+
+

@@ -9,12 +9,11 @@ const Uitjes: React.FC = () => {
         <div className="Uitjes">
             <Header />
 
-            <div className="UitjesInfo">
-
+            <main>
                 <h1>Dagje weg?</h1>
 
                 <p>
-                We hebben allerlei opties hier op een rijtje gezet dus er is voor iedereen wel een unieke manier om ons museum te beleven!
+                    We hebben allerlei opties hier op een rijtje gezet dus er is voor iedereen wel een unieke manier om ons museum te beleven!
                 </p>
 
                 <div className="Groepsbezoek">
@@ -30,7 +29,7 @@ const Uitjes: React.FC = () => {
                         <a href="./OverNxt" title="Meer over het Nxt museum">Over ons</a>
                         <a href="./Faq" title="Veelgestelde vragen">Faq</a>
                     </p>
-                p</div>
+                    p</div>
 
                 <div className="Educatie">
 
@@ -49,14 +48,14 @@ const Uitjes: React.FC = () => {
                 <div className="Workshops">
 
                     <h1>
-                    Workshops
+                        Workshops
                     </h1>
 
                     <p>
                         Binnen deze ruimte nodigen we alle denkers, makers, luisteraars, scheppers en vernietigers uit om ons te vergezellen in onze wil te onderzoeken,
                         te laten zien en te debatteren over wat de toekomst te bieden heeft.
                         We streven ernaar om leren op het gebied van createch toegankelijker te maken en onze gemeenschap van nieuwe vaardigheden te voorzien.
-                       
+
                         <h4>Onze workshops</h4>
                         <ul>
                             <li>
@@ -74,12 +73,11 @@ const Uitjes: React.FC = () => {
                                 </p>
                             </li>
                         </ul>
-                        
+
                     </p>
 
                 </div>
-
-            </div>
+            </main>
 
             <Footer />
         </div>
