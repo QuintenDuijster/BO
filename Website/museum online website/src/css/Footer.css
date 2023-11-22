@@ -1,0 +1,15 @@
+footer{
+    margin-top: 4px;
+}
+
+nav{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+
+footer div {
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
