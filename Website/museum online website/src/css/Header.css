@@ -16,19 +16,35 @@ header li{
     margin-right: 30px;
 }
 
+header .dropdown a{
+    color: white;
+}
+
+header .dropdown a:hover{
+    color:white;
+    cursor: pointer;
+}
+
+
+header .dropdown div ul {
+    display: block;
+}
+
 header .dropdown-content {
     display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-bottom: 0.25rem solid white;
 }
 
-
-header .dropdown {
-    color: white;
+header .dropdown:hover .dropdown-content {
+    display: block;
 }
 
-header .dropdown:hover {
-    color: white;
-}
-
-.right {
+header .right {
     margin-left: 1030px;
 }
