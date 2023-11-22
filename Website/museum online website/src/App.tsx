@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/App.css';
+import './Herbruikbaar/pageStyle.css';
 import './Herbruikbaar/hoverLink.css';
 import './Herbruikbaar/pageStyle.css';
 import Header from './Herbruikbaar/Header.tsx';
@@ -13,7 +14,7 @@ const App: React.FC = () =>
 
             <main>
                 <div>
-                    <img className="Background" src="Images/AppBackground.png" alt="Example" />
+                    {/*<img className="Background" src="Images/AppBackground.png" alt="Example" />*/}
                     <article>
                         <h1>Nxt Museum</h1>
                         <p>
