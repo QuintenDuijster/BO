@@ -1,5 +1,6 @@
 import React from 'react';
-import './Contact.css';
+import './css/Contact.css';
+import './Herbruikbaar/pageStyle.css';
 import Header from './Herbruikbaar/Header.tsx';
 import Footer from './Herbruikbaar/Footer.tsx';
 
