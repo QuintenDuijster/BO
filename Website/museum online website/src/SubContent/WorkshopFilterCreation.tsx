@@ -8,4 +8,4 @@ const WorkshopFilterCreation: React.FC = () =>
     );
 };
 
-export default Workshop1;
+export default WorkshopFilterCreation;
