@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/Header.css';
 import '../Herbruikbaar/pageStyle.css';
+import '../css/Header.css';
 
 const Header: React.FC = () => 
 {

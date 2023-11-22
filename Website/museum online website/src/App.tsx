@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from './Herbruikbaar/Header.tsx';
+import Footer from './Herbruikbaar/Footer.tsx';
+
+
 import './css/App.css';
 import './Herbruikbaar/pageStyle.css';
 import './Herbruikbaar/hoverLink.css';
-import './Herbruikbaar/pageStyle.css';
-import Header from './Herbruikbaar/Header.tsx';
-import Footer from './Herbruikbaar/Footer.tsx';
 
 const App: React.FC = () =>
 {

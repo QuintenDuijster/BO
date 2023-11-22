@@ -1,7 +1,25 @@
-nav {
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
 }
 
-.dropdown-content{
+.Logo,
+header nav,
+header ul {
+    display: flex;
+}
+
+header li{
+    margin: auto;
+    margin-right: 30px;
+}
+
+header .dropdown-content {
     display: none;
+}
+
+.right {
+    margin-left: 1030px;
 }

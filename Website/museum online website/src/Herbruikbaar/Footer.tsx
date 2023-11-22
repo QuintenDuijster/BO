@@ -33,14 +33,17 @@ const Footer: React.FC = () =>
 
             <div className="information">
                 <ul>
+                    <li className="Line"></li>
                     <li><h3>Address</h3></li>
                     <li><p>Asterweg 22 <br /> 1031 HP Amsterdam</p></li>
                 </ul>
                 <ul>
+                    <li className="Line"></li>
                     <li><h3>Neem contact op</h3></li>
                     <li><p>Telefoonnummer: <br /> 727-425-2760 <br /> Email: <br /> info@nxtmuseum.com</p></li>
                 </ul>
                 <ul>
+
                     <li><h3>Volg Nxt</h3></li>
                     <li><a>Instagram</a></li>
                     <li><a>Youtube</a></li>
