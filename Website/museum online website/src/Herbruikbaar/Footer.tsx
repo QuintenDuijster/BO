@@ -1,6 +1,7 @@
 import React from 'react';
-import '../css/Footer.css';
 import '../Herbruikbaar/pageStyle.css';
+import '../css/Footer.css';
+
 
 const Footer: React.FC = () => 
 {
@@ -43,12 +44,12 @@ const Footer: React.FC = () =>
                     <li><p>Telefoonnummer: <br /> 727-425-2760 <br /> Email: <br /> info@nxtmuseum.com</p></li>
                 </ul>
                 <ul>
-
+                    <li className="Line"></li>
                     <li><h3>Volg Nxt</h3></li>
-                    <li><a>Instagram</a></li>
-                    <li><a>Youtube</a></li>
-                    <li><a>TikTok</a></li>
-                    <li><a>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/nxtmuseum/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC1Afhs22rJqLfblV4GOpFTA" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.tiktok.com/@nxtmuseum?" target="_blank">TikTok</a></li>
+                    <li><a href="https://twitter.com/nxtmuseum" target="_blank">Twitter</a></li>
                 </ul>
             </div>
         </footer>

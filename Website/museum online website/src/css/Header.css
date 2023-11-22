@@ -20,6 +20,15 @@ header .dropdown-content {
     display: none;
 }
 
+
+header .dropdown {
+    color: white;
+}
+
+header .dropdown:hover {
+    color: white;
+}
+
 .right {
     margin-left: 1030px;
 }

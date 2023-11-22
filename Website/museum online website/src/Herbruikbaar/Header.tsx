@@ -24,8 +24,8 @@ const Header: React.FC = () =>
                             <p>Nxt Museum</p>
                         </a>
                     </li>
-                    <li className="dropdown" id="aLink">
-                        <span><a href="OverNxt">Over Nxt</a></span>
+                    <li>
+                        <span><a className="dropdown" href="OverNxt">Over Nxt</a></span>
                         <div className="dropdown-content">
                             <ul>
                                 <li><a className="hoverLink" href="OverNxt">Reviews</a></li>
@@ -35,8 +35,8 @@ const Header: React.FC = () =>
                             </ul>
                         </div>
                     </li>
-                    <li className="dropdown" id="aLink">
-                        <span><a href="Uitjes">Uitjes</a></span>
+                    <li>
+                        <span><a className="dropdown" href="Uitjes">Uitjes</a></span>
                         <div className="dropdown-content">
                             <ul>
                                 <li><a className="hoverLink" href="Uitjes">Bedrijfsuitje</a></li>
@@ -45,8 +45,8 @@ const Header: React.FC = () =>
                             </ul>
                         </div>
                     </li>
-                    <li className="dropdown" id="aLink">
-                        <span><a href="Contact">Contact</a></span>
+                    <li>
+                        <span><a className="dropdown" href="Contact">Contact</a></span>
                         <div className="dropdown-content">
                             <ul>
                                 <li><a className="hoverLink" href="Contact">Routeomschrijving</a></li>
@@ -54,15 +54,15 @@ const Header: React.FC = () =>
                             </ul>
                         </div>
                     </li>
-                    <li id="aLink">
+                    <li>
                         <a className="hoverLink" href="Faq">Faq</a>
                     </li>
                 </ul>
                 <ul className="right">
-                    <li id="aLink">
+                    <li>
                         <a className="hoverLink" href="Tickets">NL | ENG</a>
                     </li>
-                    <li id="aLink">
+                    <li>
                         <a className="hoverLink" href="Tickets">Tickets</a>
                     </li>
                 </ul>
