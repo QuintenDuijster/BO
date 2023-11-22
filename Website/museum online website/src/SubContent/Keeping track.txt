@@ -1,4 +1,4 @@
-Slow looking is qua html af?			-Er kan misschien nog een kleine recap van de info die op uitjes staat gegeven worden maar geen zin in nu en er moet nog een booking form (staat commented)
+html van alle workshop subpages af			-Er kan misschien nog een kleine recap van de info die op uitjes staat gegeven worden maar geen zin in nu en er moet nog een booking form (staat commented)
 
 ER MOET NOG EEN * MET UITLEG DAT BEPAALDE WORKSHOPS DOOR EXTERNE AANBIEDER GEDAAN WORDEN
 

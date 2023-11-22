@@ -74,6 +74,7 @@ const WorkshopFilterCreation: React.FC = () => {
                         </ul>
                     </div>
                 </div>
+                //Form voor het aanmelden van workshop
             </main>
             <Footer />
         </div>
