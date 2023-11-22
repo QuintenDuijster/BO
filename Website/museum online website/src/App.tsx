@@ -70,21 +70,6 @@ const App: React.FC = () =>
                         <a>Meer Over Nxt</a>
                     </div>
                 </div>
-                {/*<div className="reviews">*/}
-                {/*    <div className="review">*/}
-                {/*        <h3>review</h3>*/}
-                {/*        <p>text</p>*/}
-                {/*    </div>*/}
-                {/*    <div className="review">*/}
-                {/*        <h3>review</h3>*/}
-                {/*        <p>text</p>*/}
-                {/*    </div>*/}
-                {/*    <div className="review">*/}
-                {/*        <h3>review</h3>*/}
-                {/*        <p>text</p>*/}
-                {/*    </div>*/}
-                {/*    <a>reviews</a>*/}
-                {/*</div>*/}
             </main>
             <Footer />
         </div>
