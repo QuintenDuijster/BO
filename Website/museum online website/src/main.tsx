@@ -8,7 +8,7 @@ import Contact from './Contact.tsx';
 import Uitjes from './Uitjes.tsx';
 import WorkshopSlowLooking from "./SubContent/WorkshopSlowLooking.tsx"
 import WorkshopFilterCreation from "./SubContent/WorkshopFilterCreation.tsx"
-import WorkShop2 from "./SubContent/Workshop2.tsx"
+import WorkshopCustomisedChange from "./SubContent/WorkshopCustomisedChange.tsx"
 
 import './index.css'
 
@@ -23,7 +23,7 @@ export default function Router() {
                 <Route path="Uitjes" element={<Uitjes />} />
                 <Route path="WorkshopSlowLooking" element={< WorkshopSlowLooking />} />
                 <Route path="WorkshopFilterCreation" element={<WorkshopFilterCreation />} />
-                <Route path="Workshop2" element={< WorkShop2 />} />
+                <Route path="WorkshopCustomisedChange" element={< WorkshopCustomisedChange />} />
             </Routes>
         </BrowserRouter>
     );

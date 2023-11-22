@@ -2,13 +2,13 @@ import React from 'react';
 import Header from '../Herbruikbaar/Header.tsx';
 import Footer from '../Herbruikbaar/Footer.tsx';
 
-const WorkshopFilterCreation: React.FC = () =>
-{
+
+
+const WorkshopCustomisedChange: React.FC = () => {
     return (
         <div className="Workshop">
 
             <Header />
-
 
             <Footer />
 
@@ -16,4 +16,4 @@ const WorkshopFilterCreation: React.FC = () =>
     );
 };
 
-export default WorkshopFilterCreation;
+export default WorkshopCustomisedChange;

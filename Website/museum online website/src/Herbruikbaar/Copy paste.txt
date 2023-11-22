@@ -1,0 +1,15 @@
+import React from 'react';
+
+const WorkshopCustomisedChange: React.FC = () => {
+    return (
+        <div className="Workshop">
+
+            <Header />
+
+            <Footer />
+
+        </div>
+    );
+};
+
+export default WorkshopCustomisedChange;
