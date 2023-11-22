@@ -7,7 +7,7 @@ import OverNxt from './OverNxt.tsx';
 import Contact from './Contact.tsx';
 import Uitjes from './Uitjes.tsx';
 import WorkshopSlowLooking from "./SubContent/WorkshopSlowLooking.tsx"
-import Workshop1 from "./SubContent/Workshop1.tsx"
+import WorkshopFilterCreation from "./SubContent/WorkshopFilterCreation.tsx"
 import WorkShop2 from "./SubContent/Workshop2.tsx"
 
 import './index.css'
@@ -22,7 +22,7 @@ export default function Router() {
                 <Route path="OverNxt" element={<OverNxt />} />
                 <Route path="Uitjes" element={<Uitjes />} />
                 <Route path="WorkshopSlowLooking" element={< WorkshopSlowLooking />} />
-                <Route path="Workshop1" element={<Workshop1 />} />
+                <Route path="WorkshopFilterCreation" element={<WorkshopFilterCreation />} />
                 <Route path="Workshop2" element={< WorkShop2 />} />
             </Routes>
         </BrowserRouter>

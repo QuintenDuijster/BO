@@ -61,7 +61,7 @@ const Uitjes: React.FC = () => {
                         <ul>
                             <li>
                                 <p>
-                                    <a href="SubContent/Workshop">Slow Looking</a>
+                                    <a href="WorkshopSlowLooking">Slow Looking</a>
                                     De Slow Looking Workshop is een oefening om de manier waarop we naar de wereld om ons heen kijken te vertragen
                                     en om zo diepgaand leren over verschillende onderwerpen te stimuleren.
                                 </p>
