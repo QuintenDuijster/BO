@@ -10,7 +10,7 @@ import WorkshopSlowLooking from "./SubContent/WorkshopSlowLooking.tsx"
 import Workshop1 from "./SubContent/Workshop1.tsx"
 import WorkShop2 from "./SubContent/Workshop2.tsx"
 
-import './index.css'
+import './css/index.css'
 
 export default function Router() {
     return (

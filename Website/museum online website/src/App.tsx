@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import './Herbruikbaar/hoverLink.css';
 import './Herbruikbaar/pageStyle.css';
 import Header from './Herbruikbaar/Header.tsx';
