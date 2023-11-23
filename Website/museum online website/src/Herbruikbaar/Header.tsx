@@ -26,33 +26,27 @@ const Header: React.FC = () =>
                     </li>
                     <li className="dropdown">
                         <span><a href="OverNxt">Over Nxt</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="OverNxt">Reviews</a></li>
-                                <li><a className="hoverLink" href="OverNxt">Ons team</a></li>
-                                <li><a className="hoverLink" href="OverNxt">Eten en Drinken</a></li>
-                                <li><a className="hoverLink" href="OverNxt">Onze huisregels</a></li>
-                            </ul>
-                        </div>
+                        <ul className="dropdown-content">
+                            <li><a className="hoverLink" href="OverNxt">Reviews</a></li>
+                            <li><a className="hoverLink" href="OverNxt">Ons team</a></li>
+                            <li><a className="hoverLink" href="OverNxt">Eten en Drinken</a></li>
+                            <li><a className="hoverLink" href="OverNxt">Onze huisregels</a></li>
+                        </ul>
                     </li>
                     <li className="dropdown">
                         <span><a href="Uitjes">Uitjes</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="Uitjes">Bedrijfsuitje</a></li>
-                                <li><a className="hoverLink" href="Uitjes">Educatie</a></li>
-                                <li><a className="hoverLink" href="Uitjes">Workshops</a></li>
-                            </ul>
-                        </div>
+                        <ul className="dropdown-content">
+                            <li><a className="hoverLink" href="Uitjes">Bedrijfsuitje</a></li>
+                            <li><a className="hoverLink" href="Uitjes">Educatie</a></li>
+                            <li><a className="hoverLink" href="Uitjes">Workshops</a></li>
+                        </ul>
                     </li>
                     <li className="dropdown">
                         <span><a href="Contact">Contact</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="Contact">Routeomschrijving</a></li>
-                                <li><a className="hoverLink" href="Contact">Contactgegevens</a></li>
-                            </ul>
-                        </div>
+                        <ul className="dropdown-content">
+                            <li><a className="hoverLink" href="Contact">Routeomschrijving</a></li>
+                            <li><a className="hoverLink" href="Contact">Contactgegevens</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a className="hoverLink" href="Faq">Faq</a>
