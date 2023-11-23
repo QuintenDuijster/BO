@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './css/OverNxt.css';
 import './Herbruikbaar/pageStyle.css';
 import Header from './Herbruikbaar/Header.tsx';
@@ -7,12 +7,17 @@ import Footer from './Herbruikbaar/Footer.tsx';
 
 const OverNxt: React.FC = () =>
 {
+    useEffect(() =>
+    {
+        document.title = 'Nxt Museum | OverNxt';
+    }, []);
+
     return (
         <div className="OverNxt">
             <Header />
 
             <main>
-                <article>
+                <article id="OnsTeam">
                     <h3>Ons Team</h3>
                     <table>
                         <thead>
@@ -122,7 +127,7 @@ const OverNxt: React.FC = () =>
                     </table>
                 </article>
 
-                <article>
+                <article id="EtenenDrinken">
                     <h2>Eten en Drinken</h2>
                     <p>
                         Cafe Restaurant Metro is dagelijks geopend voor ontbijt en lunch en van woensdag t/m zondag voor dineren en drankjes.
@@ -130,7 +135,7 @@ const OverNxt: React.FC = () =>
                     <a href="https://caferestaurantmetro.nl" target="_blank">Maak een reservering</a>
                 </article>
 
-                <article>
+                <article id="OnzeHuisregels">
                     <h2>Huisregels en Algemene Voorwaarden Nxt Museum</h2>
                     <h3>Inleiding</h3>
                     <p>

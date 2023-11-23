@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './css/Tickets.css';
 import './Herbruikbaar/pageStyle.css';
 import Header from './Herbruikbaar/Header.tsx';
 import Footer from './Herbruikbaar/Footer.tsx';
 
-const Uitjes: React.FC = () => {
+const Uitjes: React.FC = () =>
+{
+    useEffect(() =>
+    {
+        document.title = 'Nxt Museum | Uitjes';
+    }, []);
+
+
     return (
         <div className="Uitjes">
             <title>Next Museum | </title>
@@ -17,7 +24,7 @@ const Uitjes: React.FC = () => {
                     We hebben allerlei opties hier op een rijtje gezet dus er is voor iedereen wel een unieke manier om ons museum te beleven!
                 </p>
 
-                <div className="Groepsbezoek">
+                <div className="Groepsbezoek" id="Bedrijfsuitjes">
 
                     <h1>Groepsbezoek</h1>
 
@@ -32,7 +39,7 @@ const Uitjes: React.FC = () => {
                     </p>
                     </div>
 
-                <div className="Educatie">
+                <div className="Educatie" id="Educatie">
 
                     <h1>Excursies voor scholen</h1>
 
@@ -46,11 +53,9 @@ const Uitjes: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="Workshops">
+                <div className="Workshops" id="Workshops">
 
-                    <h1>
-                        Workshops
-                    </h1>
+                    <h1> Workshops </h1>
 
                     <p>
                         Binnen deze ruimte nodigen we alle denkers, makers, luisteraars, scheppers en vernietigers uit om ons te vergezellen in onze wil te onderzoeken,
@@ -93,9 +98,6 @@ const Uitjes: React.FC = () => {
                             </p>
                         </li>
                     </ul>
-
-
-
                 </div>
             </main >
 

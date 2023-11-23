@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Herbruikbaar/pageStyle.css';
 import './Herbruikbaar/hoverLink.css';
 import './css/Contact.css';
@@ -8,12 +8,18 @@ import Footer from './Herbruikbaar/Footer.tsx';
 
 const Contact: React.FC = () =>
 {
+    useEffect(() =>
+    {
+        document.title = 'Nxt Museum | Contact';
+    }, []);
+
     return (
         <div className="Contact">
+
             <Header />
 
             <main>
-                <article>
+                <article id="Vacatures">
                     <h2>Vacatures</h2>
                     <p>
                         Een team verbonden door een liefde voor kunst en vooruitgang.
@@ -28,7 +34,7 @@ const Contact: React.FC = () =>
                     </details>
                 </article>
 
-                <article>
+                <article id="PartnerWorden">
                     <h2>Partner worden</h2>
                     <p>
                         Nxt Museum verbindt kunst met technologie en wetenschap via grootschalige kunstinstallaties op 1400 m2 terrein in Amsterdam-Noord.
@@ -56,7 +62,7 @@ const Contact: React.FC = () =>
                     </p>
                 </article>
 
-                <article>
+                <article id="Pers">
                     <h2>Pers</h2>
                     <p>
                         Benieuwd naar Nxt en de mogelijkheden voor samenwerkingen? Neem contact op met PRESS@NXTMUSEUM.COM.
