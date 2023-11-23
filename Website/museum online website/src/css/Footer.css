@@ -5,7 +5,7 @@ footer{
 footer nav {
     display: flex;
     margin: auto;
-    width: 65%;
+    width: 75vw;
 }
 footer nav li{
     margin: 0px 60px 0px 60px;
@@ -15,17 +15,15 @@ footer div li {
     margin: 0px 30px 0px 30px;
 }
 
-footer div {
-    display: flex;
-    margin: auto;
-    width: 53%;
-}
+    footer div {
+        display: flex;
+        margin: auto;
+        width: 53%;
+    }
 
-footer .Line {
-    background-color: white;
-    height: 5px;
-    width: 200px;
-}
+    footer .Line {
+        border-top: 4px solid white;
+    }
 
 footer div a{
     color: white;
@@ -34,3 +32,4 @@ footer div a{
 footer div a:hover {
     color: white;
 }
+
