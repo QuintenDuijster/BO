@@ -26,29 +26,31 @@
     color:white;
 }
 
-.dropdown span a{
+.dropdown a {
     color: white;
 }
 
-.dropdown span a:hover {
-    color: white;
-}
+.dropdown a:hover {
+        color: white;
+        cursor: pointer;
+    }
 
-.dropdown {
-    color: white;
-}
 
-.dropdown:hover .dropdown-content{
+.dropdown div ul {
     display: block;
 }
 
-.dropdown:hover {
-    color: white;
-}
-
-.dropdown-content {
+.dropdown-content::after {
     display: none;
     position: absolute;
-    z-index: 3;
     background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-bottom: 0.25rem solid white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
