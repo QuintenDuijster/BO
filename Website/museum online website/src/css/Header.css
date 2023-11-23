@@ -45,6 +45,10 @@ header .dropdown:hover .dropdown-content {
     display: block;
 }
 
-header .right {
-    margin-left: 1030px;
+.Left {
+    float: left;
+}
+
+.Right{
+    float: right;
 }

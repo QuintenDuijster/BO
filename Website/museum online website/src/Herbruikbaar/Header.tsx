@@ -7,7 +7,7 @@ const Header: React.FC = () =>
     return (
         <header> {/* dit is de header voor de website! */}
             <nav>
-                <ul>
+                <ul className="Left">
                     <li>
                         <a className="Logo" href="http://localhost:5173/">
                             <svg
@@ -58,7 +58,7 @@ const Header: React.FC = () =>
                         <a className="hoverLink" href="Faq">Faq</a>
                     </li>
                 </ul>
-                <ul className="right">
+                <ul className="Right">
                     <li>
                         <a className="hoverLink" href="Tickets">NL | ENG</a>
                     </li>
