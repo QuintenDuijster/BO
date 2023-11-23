@@ -49,8 +49,9 @@ const Header: React.FC = () =>
                         <span><a href="Contact">Contact</a></span>
                         <div className="dropdown-content">
                             <ul>
-                                <li><a className="hoverLink" href="Contact">Routeomschrijving</a></li>
-                                <li><a className="hoverLink" href="Contact">Contactgegevens</a></li>
+                                <li><a className="hoverLink" href="Contact">Vacatures</a></li>
+                                <li><a className="hoverLink" href="Contact">Partner worden</a></li>
+                                <li><a className="hoverLink" href="Contact">Pers</a></li>
                             </ul>
                         </div>
                     </li>
