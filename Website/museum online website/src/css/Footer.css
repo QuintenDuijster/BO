@@ -1,35 +1,19 @@
-footer{
-    margin-top: 4px;
+footer {
+    border-top: 4px solid white;
+    width: 100vw;
 }
 
-footer nav {
-    display: flex;
-    margin: auto;
-    width: 75vw;
-}
-footer nav li{
-    margin: 0px 60px 0px 60px;
+footer { text-align: center; }
+
+footer nav ul{
+    display: inline-block;
+    text-align: left;
+    margin: 10px 50px;
 }
 
-footer div li {
-    margin: 0px 30px 0px 30px;
-}
 
-    footer div {
-        display: flex;
-        margin: auto;
-        width: 53%;
+    footer .information div {
+        display: inline-block;
+        text-align: left;
+        margin: 10px 50px;
     }
-
-    footer .Line {
-        border-top: 4px solid white;
-    }
-
-footer div a{
-    color: white;
-}
-
-footer div a:hover {
-    color: white;
-}
-

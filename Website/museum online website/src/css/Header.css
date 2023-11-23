@@ -1,23 +1,33 @@
-
-header{
-    background-color: black;
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    border-bottom: 4px solid white;
+    z-index: 2;
 }
 
-header nav,
-header nav ul,
-header .Logo {
-    display: flex;
-}
+header .Left,
+header .Right,
+header .Logo { display: flex; }
 
-@media screen and (max-width: 900px) {
-    header nav,
-    header nav ul,
-    header .Logo {
-        display: block;
-    }
-}
+header .Logo p{ color: white; }
 
+header .Left li,
+header .Right li { margin: auto 15px; }
 
-header li {
-    margin: 0px 15px; 
+header .Right li{ margin: 20px; }
+
+header .Left { float: left; }
+
+header .Right { float: right; }
+
+@media screen and (max-width: 865px) {
+    header .Left,
+    header .Right,
+    header .Logo { display: block; }
+
+    header .Left { float: none; }
+
+    header .Right { float: none; }
 }
