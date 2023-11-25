@@ -1,33 +1,32 @@
 import React from 'react';
-import './App.css';
-import './Herbruikbaar/hoverLink.css';
 import Header from './Herbruikbaar/Header.tsx';
 import Footer from './Herbruikbaar/Footer.tsx';
-import ImageSequence from './Herbruikbaar/ImageSequence.tsx';
+
+
+import './css/App.css';
+import './Herbruikbaar/pageStyle.css';
+import './Herbruikbaar/hoverLink.css';
 
 const App: React.FC = () =>
 {
     return (
-        <div className="App">
+        <>
             <Header />
-            <main>
-                <div className="Header">
-                    <img className="Background" src="Images/AppBackground.png" alt="Example" />
-                    <div className="Header-contant">
-                        <div>
-                            <h1>Nxt Museum</h1>
-                            <p>
-                                Het eerste museum in Nederland dat zich volledig richt op mediakunst. <br />
-                                Ontdek grootschalige, digitale kunstinstallaties die je blik verruimen <br />
-                                en de zintuigen op scherp stellen. De kunst van morgen, vandaag.
 
-                            </p>
-                        </div>
-                        <ImageSequence />
-                    </div>
+            <main>
+                <div className="main">
+                    <article>
+                        <h1>Nxt Museum</h1>
+                        <p>
+                            Het eerste museum in Nederland dat zich volledig richt op mediakunst. <br />
+                            Ontdek grootschalige, digitale kunstinstallaties die je blik verruimen <br />
+                            en de zintuigen op scherp stellen. De kunst van morgen, vandaag.
+
+                        </p>
+                    </article>
                 </div>
-                <div className="info">
-                    <div className="infoBox" id="left">
+                <div className="articles">
+                    <article className="Left">
                         <h2>Wat is Nxt?</h2>
                         <p>
                             Nxt Museum is het eerste museum in Nederland dat zich volledig richt op mediakunst.<br />
@@ -37,8 +36,8 @@ const App: React.FC = () =>
                             Een moment van bezinning in een realiteit die alsmaar sneller doorontwikkelt.
                         </p>
                         <a>Tentoonstellingen</a>
-                    </div>
-                    <div className="infoBox" id="right">
+                    </article>
+                    <article className="Right">
                         <h2>Openingstijden</h2>
                         <ul>
                             <li>Dinsdag: 10:30 - 20:30</li>
@@ -48,8 +47,8 @@ const App: React.FC = () =>
                             <li>Zondag: 10:30 - 22:30</li>
                         </ul>
                         <a>Contact</a>
-                    </div>
-                    <div className="infoBox" id="left">
+                    </article>
+                    <article className="Left">
                         <h2>De ruimte</h2>
                         <p>
                             Het museum is gevestigd in een voormalige productiestudio in het hart van Amsterdam-Noord - een plek die zich bij uitstek leent voor het ontdekken,<br />
@@ -59,8 +58,8 @@ const App: React.FC = () =>
                             Een plek voor live performances, educatie, creatie, zang, dans en meer.
                         </p>
                         <a>Meer Over Nxt</a>
-                    </div>
-                    <div className="infoBox" id="right">
+                    </article>
+                    <article className="Right">
                         <h2>Onze missie</h2>
                         <p>
                             Het is onze missie om vooruitstrevende vormen van creativiteit te stimuleren.<br />
@@ -70,26 +69,12 @@ const App: React.FC = () =>
                             Ga je mee op zoek naar het antwoord?
                         </p>
                         <a>Meer Over Nxt</a>
-                    </div>
+                    </article>
                 </div>
-                {/*<div className="reviews">*/}
-                {/*    <div className="review">*/}
-                {/*        <h3>review</h3>*/}
-                {/*        <p>text</p>*/}
-                {/*    </div>*/}
-                {/*    <div className="review">*/}
-                {/*        <h3>review</h3>*/}
-                {/*        <p>text</p>*/}
-                {/*    </div>*/}
-                {/*    <div className="review">*/}
-                {/*        <h3>review</h3>*/}
-                {/*        <p>text</p>*/}
-                {/*    </div>*/}
-                {/*    <a>reviews</a>*/}
-                {/*</div>*/}
             </main>
+
             <Footer />
-        </div>
+        </>
     );
 };
 
