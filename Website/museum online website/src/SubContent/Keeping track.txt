@@ -3,3 +3,7 @@ html van alle workshop subpages af			-Er kan misschien nog een kleine recap van 
 ER MOET NOG EEN * MET UITLEG DAT BEPAALDE WORKSHOPS DOOR EXTERNE AANBIEDER GEDAAN WORDEN
 
 Educatie tab moet nog refs naar de workshops hebben
+
+
+faq > Parkeerplaatsen voor mindervaliden //heeft nog interactie met "Hier" keyword nodig
+faq > Bent u van de pers of wilt u een partnership met ons aangaan dan kunt u hier de informatie vinden. //heeft nog interactie nodig met contact formulier
