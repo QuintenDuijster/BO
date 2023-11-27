@@ -1,0 +1,30 @@
+import React, { useEffect } from 'react';
+import Header from '../Reusable/Header.tsx';
+import Footer from '../Reusable/Footer.tsx';
+
+//CSS
+import '../Reusable/PageStyle.css';
+import './CSS/Faq.css';
+
+
+const /*PageName*/: React.FC = () =>
+{
+    useEffect(() =>
+    {
+        document.title = 'Nxt Museum | /*PageName*/';
+    }, []);
+
+    return (
+        <>
+            <Header />
+
+            <main>
+                /*Page in here*/
+            </main>
+
+            <Footer />
+        </>
+    );
+};
+
+export default /*PageName*/;

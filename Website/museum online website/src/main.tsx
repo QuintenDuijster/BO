@@ -11,6 +11,7 @@ import EducationAndWorkshops from './ENG/EducationAndWorkshops';
 import VisitorInformation from './ENG/VisitorInformation';
 import WhatsLive from './ENG/WhatsLive';
 import Tickets from './ENG/Tickets';
+import Faq from './ENG/Faq';
 
 //NL
 import HoofdPagina from './NL/HoofdPagina';
@@ -33,6 +34,7 @@ export default function Router() {
                 <Route path="VisitorInformation" element={<VisitorInformation />} />
                 <Route path="WhatsLive" element={<WhatsLive />} />
                 <Route path="Tickets" element={<Tickets />} />
+                <Route path="Faq" element={<Faq />} />
 
                 {/*NL*/}
                 <Route path="NL" element={<HoofdPagina />} />
