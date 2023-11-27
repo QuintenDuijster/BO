@@ -18,19 +18,19 @@ Afspraken over communicatie:
 
 
 
-	Benodigdheden startpagina:
+Benodigdheden startpagina:
 
-- Geschiedenis museum in het kort
+	- Geschiedenis museum in het kort
 
-- Overzicht van wat je kan doen & zien
+	- Overzicht van wat je kan doen & zien
 
-- Contactgegevens
+	- Contactgegevens
 
-- Openingstijden 
+	- Openingstijden 
 
-- Reviews van bezoekers
+ 	- Reviews van bezoekers 
 
-	Minimaal 5 plaatjes van het museum in de site. De site staat op je ma-cloud online in een aparte map
+	- Minimaal 5 plaatjes van het museum in de site. De site staat op je ma-cloud online in een aparte map
 
 	De landing page moet professioneel overkomen. 
 	(Een strakke uitlijning, consequent doorgevoerde huisstijl, clean design, herhaling van elementen. 
