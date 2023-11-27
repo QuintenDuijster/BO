@@ -1,0 +1,28 @@
+main .main {
+    background-image: url("Images/AppBackground.png");
+    width: 100vw;
+    height: 850px;
+    margin-top: 130px;
+}
+
+main
+
+
+
+
+
+main .Left {
+
+}
+
+main .Right {
+
+}
+
+main article{
+    width: 30vw;
+}
+
+.main .articles{
+    display: grid;
+}
