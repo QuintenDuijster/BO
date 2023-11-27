@@ -1,19 +1,19 @@
-import React from 'react';
-import './css/Contact.css';
+﻿import React from 'react';
+import './css/Faq.css';
 import './Herbruikbaar/pageStyle.css';
 import Header from './Herbruikbaar/Header.tsx';
 import Footer from './Herbruikbaar/Footer.tsx';
 
 
-const Contact: React.FC = () =>
+const Faq: React.FC = () =>
 {
     return (
-        <div className="Contact">
+        <>
             <Header />
 
             <Footer />
-        </div>
+        </>
     );
 };
 
-export default Contact;
+export default Faq;

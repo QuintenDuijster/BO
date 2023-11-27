@@ -9,6 +9,13 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-top: -20px;
+}
+
+:root::-webkit-scrollbar {
+    display: none;
 }
 
 a {
