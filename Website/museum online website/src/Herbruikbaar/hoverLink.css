@@ -25,3 +25,32 @@
 .hoverLink:hover{
     color:white;
 }
+
+.dropdown a {
+    color: white;
+}
+
+.dropdown a:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+
+.dropdown div ul {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-bottom: 0.25rem solid white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

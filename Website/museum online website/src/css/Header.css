@@ -1,34 +1,32 @@
 header {
     position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
+    top: 0px;
+    width: 100vw;
+    border-bottom: 4px solid white;
+    z-index: 2;
 }
 
-.Logo,
-header nav,
-header ul {
-    display: flex;
-}
+header .Left,
+header .Right,
+header .Logo { display: flex; }
 
-header li{
-    margin: auto;
-    margin-right: 30px;
-}
+header .Logo p{ color: white; }
 
-header .dropdown-content {
-    display: none;
-}
+header .Left li,
+header .Right li { margin: auto 15px; }
 
+header .Right li{ margin: 20px; }
 
-header .dropdown {
-    color: white;
-}
+header .Left { float: left; }
 
-header .dropdown:hover {
-    color: white;
-}
+header .Right { float: right; }
 
-.right {
-    margin-left: 1030px;
+@media screen and (max-width: 865px) {
+    header .Left,
+    header .Right,
+    header .Logo { display: block; }
+
+    header .Left { float: none; }
+
+    header .Right { float: none; }
 }

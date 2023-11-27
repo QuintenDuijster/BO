@@ -9,26 +9,26 @@ const Footer: React.FC = () =>
         <footer>
             <nav>
                 <ul>
-                    <li><a className="hoverLink" href="#test"><h3>OverNxt</h3></a></li>
-                    <li><a className="hoverLink" href="#test">Reviews</a></li>
-                    <li><a className="hoverLink" href="#test">Ons team</a></li>
-                    <li><a className="hoverLink" href="#test">Eten en Drinken</a></li>
-                    <li><a className="hoverLink" href="#test">Onze huisregels</a></li>
+                    <li><a className="hoverLink" href="OverNxt"><h3>OverNxt</h3></a></li>
+                    <li><a className="hoverLink" href="OverNxt?section=OnsTeam">Ons team</a></li>
+                    <li><a className="hoverLink" href="OverNxt?section=EtenenDrinken">Eten en Drinken</a></li>
+                    <li><a className="hoverLink" href="OverNxt?section=OnzeHuisregels">Onze huisregels</a></li>
                 </ul>
                 <ul>
-                    <li><a className="hoverLink" href="#test"><h3>Uitjes</h3></a></li>
-                    <li><a className="hoverLink" href="#test">Bedrijfuitje</a></li>
-                    <li><a className="hoverLink" href="#test">Educatie</a></li>
-                    <li><a className="hoverLink" href="#test">Workshop</a></li>
+                    <li><a className="hoverLink" href="Uitjes"><h3>Uitjes</h3></a></li>
+                    <li><a className="hoverLink" href="Uitjes?section=Bedrijfsuitjes">Bedrijfsuitje</a></li>
+                    <li><a className="hoverLink" href="Uitjes?section=Educatie">Educatie</a></li>
+                    <li><a className="hoverLink" href="Uitjes?section=Workshops">Workshops</a></li>
                 </ul>
                 <ul>
-                    <li><a className="hoverLink" href="#test"><h3>Contact</h3></a></li>
-                    <li><a className="hoverLink" href="#test">Routeomschrijving</a></li>
-                    <li><a className="hoverLink" href="#test">Contactgegevens</a></li>
+                    <li><a className="hoverLink" href="Contact"><h3>Contact</h3></a></li>
+                    <li><a className="hoverLink" href="Contact?section=Vacatures">Vacatures</a></li>
+                    <li><a className="hoverLink" href="Contact?section=PartnerWorden">Partner worden</a></li>
+                    <li><a className="hoverLink" href="Contact?section=Pers">Pers</a></li>
                 </ul>
                 <ul>
-                    <li><a className="hoverLink" href="#test"><h3>Faq</h3></a></li>
-                    <li><a className="hoverLink" href="#test"><h3>Tickets</h3></a></li>
+                    <li><a className="hoverLink" href="Faq"><h3>Faq</h3></a></li>
+                    <li><a className="hoverLink" href="Tickets"><h3>Tickets</h3></a></li>
                 </ul>
             </nav>
 

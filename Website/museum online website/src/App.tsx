@@ -14,8 +14,7 @@ const App: React.FC = () =>
             <Header />
 
             <main>
-                <div>
-                    {/*<img className="Background" src="Images/AppBackground.png" alt="Example" />*/}
+                <div className="main">
                     <article>
                         <h1>Nxt Museum</h1>
                         <p>
@@ -26,8 +25,8 @@ const App: React.FC = () =>
                         </p>
                     </article>
                 </div>
-                <div>
-                    <div>
+                <div className="articles">
+                    <article className="Left">
                         <h2>Wat is Nxt?</h2>
                         <p>
                             Nxt Museum is het eerste museum in Nederland dat zich volledig richt op mediakunst.<br />
@@ -37,8 +36,8 @@ const App: React.FC = () =>
                             Een moment van bezinning in een realiteit die alsmaar sneller doorontwikkelt.
                         </p>
                         <a>Tentoonstellingen</a>
-                    </div>
-                    <div>
+                    </article>
+                    <article className="Right">
                         <h2>Openingstijden</h2>
                         <ul>
                             <li>Dinsdag: 10:30 - 20:30</li>
@@ -48,8 +47,8 @@ const App: React.FC = () =>
                             <li>Zondag: 10:30 - 22:30</li>
                         </ul>
                         <a>Contact</a>
-                    </div>
-                    <div>
+                    </article>
+                    <article className="Left">
                         <h2>De ruimte</h2>
                         <p>
                             Het museum is gevestigd in een voormalige productiestudio in het hart van Amsterdam-Noord - een plek die zich bij uitstek leent voor het ontdekken,<br />
@@ -59,8 +58,8 @@ const App: React.FC = () =>
                             Een plek voor live performances, educatie, creatie, zang, dans en meer.
                         </p>
                         <a>Meer Over Nxt</a>
-                    </div>
-                    <div>
+                    </article>
+                    <article className="Right">
                         <h2>Onze missie</h2>
                         <p>
                             Het is onze missie om vooruitstrevende vormen van creativiteit te stimuleren.<br />
@@ -70,7 +69,7 @@ const App: React.FC = () =>
                             Ga je mee op zoek naar het antwoord?
                         </p>
                         <a>Meer Over Nxt</a>
-                    </div>
+                    </article>
                 </div>
             </main>
 
