@@ -1,14 +1,19 @@
-import React from 'react';
-import Header from './Herbruikbaar/Header.tsx';
-import Footer from './Herbruikbaar/Footer.tsx';
+import React, { useEffect } from 'react';
+import Header from '../Reusable/Header.tsx';
+import Footer from '../Reusable/Footer.tsx';
+
+//CSS
+import '../Reusable/PageStyle.css';
+import './CSS/MainPage.css';
 
 
-import './css/App.css';
-import './Herbruikbaar/pageStyle.css';
-import './Herbruikbaar/hoverLink.css';
-
-const App: React.FC = () =>
+const MainPage: React.FC = () =>
 {
+    useEffect(() =>
+    {
+        document.title = 'Nxt Museum';
+    }, []);
+
     return (
         <>
             <Header />
@@ -78,4 +83,4 @@ const App: React.FC = () =>
     );
 };
 
-export default App;
+export default MainPage;

@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
-import './css/Tickets.css';
-import './Herbruikbaar/pageStyle.css';
-import Header from './Herbruikbaar/Header.tsx';
-import Footer from './Herbruikbaar/Footer.tsx';
+import Header from '../Reusable/Header.tsx';
+import Footer from '../Reusable/Footer.tsx';
+
+//CSS
+import '../Reusable/PageStyle.css';
+import './CSS/Tickets.css';
 
 
 const Tickets: React.FC = () =>
@@ -13,11 +15,15 @@ const Tickets: React.FC = () =>
     }, []);
 
     return (
-        <div className="Tickets">
+        <>
             <Header />
-            <h1> sup</h1>
+
+            <main>
+
+            </main>
+
             <Footer />
-        </div>
+        </>
     );
 };
 
