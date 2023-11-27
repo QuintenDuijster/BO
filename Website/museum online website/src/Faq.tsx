@@ -9,7 +9,7 @@ const FAQ: React.FC = () => {
             <Header />
             <main>
                 <div className="Faq">
-                    <h1>Veelgestelde vragen</h1>
+                    <h1>Veelgestelde Vragen</h1>
                     <p>Hier vindt u onze meest gestelde vragen</p>
 
                     <div className="Tickets">

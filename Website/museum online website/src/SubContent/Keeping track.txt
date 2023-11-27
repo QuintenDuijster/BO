@@ -7,3 +7,4 @@ Educatie tab moet nog refs naar de workshops hebben
 
 faq > Parkeerplaatsen voor mindervaliden //heeft nog interactie met "Hier" keyword nodig
 faq > Bent u van de pers of wilt u een partnership met ons aangaan dan kunt u hier de informatie vinden. //heeft nog interactie nodig met contact formulier
+faq > schoolbezoeken > workshops voor scholen // er moet nog een href

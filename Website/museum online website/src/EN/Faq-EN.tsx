@@ -1,6 +1,6 @@
 ﻿import React from 'react';
-import Header from './Herbruikbaar/Header.tsx';
-import Footer from './Herbruikbaar/Footer.tsx';
+import Header from '../Herbruikbaar/Header.tsx';
+import Footer from '../Herbruikbaar/Footer.tsx';
 
 const FAQ: React.FC = () => {
     return (
@@ -9,96 +9,89 @@ const FAQ: React.FC = () => {
             <Header />
             <main>
                 <div className="Faq">
-                    <h1>Veelgestelde vragen</h1>
-                    <p>Hier vindt u onze meest gestelde vragen</p>
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Here you can find our frequently asked questions</p>
 
                     <div className="Tickets">
                     <details>
                         <summary className="Highsummary" >Tickets</summary>
-                        <p className="InfoTickets">Hier vindt u de meest gestelde vragen over onze tickets</p>
+                        <p className="InfoTickets">Here you can find our most asked questions about our tickets</p>
                         <div className="Info">
                             <details>
-                                <summary className="Lowsummary" >Kan ik een ticket aan de deur kopen?</summary>
+                                    <summary className="Lowsummary" >Can I get a ticket at the door?</summary>
                                 <p className="HiddenText">
-                                    Nee, tickets voor Nxt Museum zijn uitsluitend online te koop via onze ticketshop.
-                                    Online boekingen stellen ons in staat om het aantal mensen in de ruimte bij te houden om de beste ervaring voor elke bezoeker te garanderen.
-                                    Wij bieden IDeal, Visa, Mastercard, Sofort Payment, Bancontact, Vpay, Alipay aan als betaalopties in onze ticketshop.
+                                        No, tickets to Nxt Museum can solely be purchased online via our ticket shop.
+                                        Online bookings enable us to keep track of the amount of people in the space to ensure the best experience for each visitor.
+                                        We offer IDeal, Visa, Mastercard, Sofort Payment, Bancontact, Vpay, Alipay as payment offers in our ticket shop
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Hoe kan ik mijn tijdslot wijzigen?</summary>
+                                    <summary className="Lowsummary" >Can I get a refund on my ticket?</summary>
                                 <p className="HiddenText">
-                                    Indien je echt niet kunt komen, kun je jouw ticket tot 4 uur voor je tijdslot wijzigen. Bezoek onze ticketsupport om jouw reservering te wijzigen.
+                                        No, we don’t refund tickets. We offer the opportunity to change your time slot up to 4 hours ahead of your booking, if you really cannot make it.
+                                        Please go to our ticket support to make the change to your booking.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Kan ik mijn ticket retourneren?</summary>
+                                    <summary className="Lowsummary" >I booked too many tickets. Can I get a refund?</summary>
                                 <p className="HiddenText">
-                                    Op entreetickets is geen herroepingsrecht van toepassing. Indien je echt niet kunt komen, kun je jouw ticket tot 4 uur voor je tijdslot wijzigen.
-                                    Bezoek onze ticketsupport om jouw reservering te wijzigen.
+                                        You are not eligible for a refund if you book too many tickets. However you can rebook these tickets for an alternative date.
+                                        To do so head to our ticket support.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Kan ik een factuur krijgen voor mijn ticket(s)?</summary>
+                                    <summary className="Lowsummary" >Can I get a payment receipt for my ticket(s)?</summary>
                                 <p className="HiddenText">
-                                    Nee, helaas staat ons ticketsysteem het niet toe om een factuur te maken voor dit type ticket.
-                                    Een boekingsoverzicht wordt via een bevestigingsmail naar je opgestuurd, samen met je tickets.
+                                        No, unfortunately our ticketing system does not allow creating an invoice for this type of ticket.
+                                        A booking overview is shared in your confirmation email, along with your tickets.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Ik heb teveel tickets besteld, kan ik een terugbetaling aanvragen?</summary>
+                                    <summary className="Lowsummary" >I am an (international) student, can I buy a student ticket?</summary>
                                 <p className="HiddenText">
-                                    Op entreetickets is geen herroepingsrecht van toepassing. Wel is er de mogelijkheid om de tickets om te boeken naar een andere dag en/of tijd via onze ticketsupport.
+                                        Yes you can! Local and International students must bring proof of current enrolment at their university
+                                        (for example Studielink for Dutch students) to show upon entering the museum.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Ik ben een (internationale) student, kan ik een studentenkaart kopen?</summary>
+                                    <summary className="Lowsummary" >Can I enter Nxt Museum with an ICOM/ Museum Jaarkaart card ?</summary>
                                 <p className="HiddenText">
-                                    Ja, alle studenten zijn welkom bij Nxt Museum! Zorg ervoor dat je een geldige studentenkaart meeneemt (met foto en geldige einddatum).
+                                        The ICOM / Museum cards (Museum Jaarkaart) are not valid at Nxt Museum. Nxt Museum operates independent from any form of subsidy.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Ik ben student maar heb geen studentenkaart, kan ik toch een studententicket kopen?</summary>
+                                    <summary className="Lowsummary" >I own a Stadspas where can I book my ticket?</summary>
                                 <p className="HiddenText">
-                                    Ja dat kan! Lokale en internationale studenten moeten bij binnenkomst in het museum een geldig bewijs van inschrijving (bijvoorbeeld Studielink) meenemen.
+                                        Stadspas tickets can be booked here. You can book one ticket per Stadspas, it is not possible to bring a guest free of charge.
+                                        If you are coming with a regular ticket holder book your stadspas ticket first to ensure that you can enter the museum together.
+                                        Be sure to bring your valid Stadspas to show on the door.In case the card is not valid at the time of the visit, the full ticket price needs to be paid at the entrance.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Is het mogelijk om Nxt Museum te bezoeken met een ICOM/ Museumjaarkaart?</summary>
+                                    <summary className="Lowsummary" >How to visit Nxt Museum with the Iamsterdam City Card?</summary>
                                 <p className="HiddenText">
-                                    De ICOM/ Museumjaarkaart zijn niet geldig bij Nxt Museum. Wij ontvangen geen subsidie en genereren al onze inkomsten via de verkoop van tickets en onze museumwinkel.
+                                        Book your tickets in advance via our ticketshop. Upon entering the museum, please bring your City Card.
+                                        Make sure your City Card is valid at the time of your visit.
+                                        If the card is not valid at the time of the visit, the full ticket price needs to be paid at the entrance.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Waar kan ik mijn Stadspas ticket kopen?</summary>
+                                    <summary className="Lowsummary" >Can you put me on a cancellation list in case a day is sold out?</summary>
                                 <p className="HiddenText">
-                                    Per Stadspas kun je één kaartje reserveren. Het is niet mogelijk om een gast gratis mee te nemen.
-                                    Kom je samen met iemand die een regulier kaartje heeft, boek dan eerst je stadspas kaartje om er zeker van te zijn dat je samen het museum in kunt.
-                                    Zorg ervoor dat je je geldige Stadspas meeneemt om aan de deur te laten zien. Indien de kaart niet geldig is op het moment van bezoek, moet de volledige ticketprijs bij de ingang worden betaald.
+                                        We do not have a cancellation list, hence it’s not an option.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Hoe kan ik Nxt Museum bezoeken met een IAmsterdam City Card?</summary>
+                                    <summary className="Lowsummary" >How do I take advantage of dynamic ticket prices?</summary>
                                 <p className="HiddenText">
-                                    Boek je tickets tijdig via onze website. Neem je geldige City Card mee naar het museum. Wanneer de City Card niet geldig is, zal het volledige bedrag bij de ingang betaald moeten worden.
+                                        Standard Adult Ticket prices vary based on time slot and start from €20.50 up to €24,75.
+                                        We offer a special rate during early and late time slots during the weekdays.
                                 </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Kan ik op de reservelijst worden gezet als tickets uitverkocht zijn?</summary>
+                                    <summary className="Lowsummary" >Can I re-visit Nxt Museum with my MuseumNacht ticket?</summary>
                                 <p className="HiddenText">
-                                    Dit is helaas niet mogelijk.
-                                </p>
-                                </details>
-                            <details>
-                                <summary className="Lowsummary" >Hoe profiteer ik van dynamische ticketprijzen?</summary>
-                                <p className="HiddenText">
-                                    De prijzen van tickets voor volwassenen variëren op basis van het tijdslot en zijn van € 20,50 tot € 24,75. We bieden een speciaal tarief voor vroege en late tijdsloten tijdens weekdagen.
-                                </p>
-                                </details>
-                            <details>
-                                <summary className="Lowsummary" >Kan ik Nxt Museum (opnieuw) bezoeken met mijn Museumnacht ticket?</summary>
-                                <p className="HiddenText">
-                                    Na de Museumnacht zelf (5 november) kun je Nxt Museum niet bezoeken met het vertoon van je Museumnacht ticket. Dit aanbod geldt alleen voor musea die de Museumkaart accepteren.
+                                        You cannot visit Nxt Museum with your museumnacht ticket after Museumnacht itself (5th Nov). This offer is only applicable for museums that accept Museumcard.
                                 </p>
                                 </details>
                             </div>  
@@ -106,65 +99,67 @@ const FAQ: React.FC = () => {
                     </div>
                     <div className="GroupBooking">
                     <details>
-                        <summary className="Highsummary">Groep- en schoolbezoek</summary>
-                        <p className="InfoGroupBooking">Hier vindt u de meest gestelde vragen over onze bezoeken in groepsverband</p>
+                            <summary className="Highsummary">School and Group visit</summary>
+                        <p className="InfoGroupBooking">Here you can find our most asked questions about visiting in a group</p>
                         <div className="Info">
                             <details>
-                                <summary className="Lowsummary" >Hoe kan ik een schoolbezoek organiseren?</summary>
-                                <p className="HiddenText">Via onze schoolboekingstool boek je heel eenvoudig een bezoek voor je leerlingen. Zorg ervoor dat je jouw tickets 2 weken voor jouw bezoek reserveert. Wij accepteren ook de Cultuurkaart!
-                                    We nemen zo snel mogelijk contact met je op. Dit duurt ongeveer 4 tot 5 dagen.</p>
+                                    <summary className="Lowsummary" >How can I arrange a group booking to Nxt Museum?</summary>
+                                    <p className="HiddenText">For groups of more than 10 people – whether you’re from a business, or just a group of friends – use the Group Booking Tool here.
+                                        Group bookings must be made at least 2 weeks in advance of your visit. We’ll get back to you as soon as we can, usually that takes us about 4-5 days.</p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Hoe regel ik een groepsbezoek aan Nxt Museum?</summary>
-                                <p className="HiddenText">Voor groepen van meer dan 10 personen – of het nu een bedrijfsuitje is of gewoon een groep vrienden – kan je deze Groepsboekingen tool gebruiken.
-                                    Groepsboekingen moeten minimaal 2 weken voor je bezoek worden gereserveerd. We nemen zo snel mogelijk contact met je op. We streven ernaar om binnen 4-5 dagen te antwoorden.</p>
+                                    <summary className="Lowsummary" >How can I book a visit for my students or organise a school visit?</summary>
+                                    <p className="HiddenText">You can easily book a visit for your students via our school booking tool. Be sure to book your tickets 2 weeks in advance of your visit.
+                                        We also accept the Cultuurkaart!
+                                        We’ll get back to you as soon as we can, usually that takes us about 4-5 days.</p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Welke workshops bieden jullie aan voor scholen?</summary>
-                                <p className="HiddenText">In 2022 hebben we twee workshops in de aanbieding voor groepen – Slow Looking, en Facefilter creatie. Vind hier meer informatie</p>
+                                    <summary className="Lowsummary" >What workshops do you offer for schools?</summary>
+                                    <p className="HiddenText">We currently offer two workshops for schools – slow looking, and face filter creation. Find more information here.</p>
                                 </details>
                             </div>
                         </details>
                     </div>
                     <div className="Accessibility">
                     <details>
-                        <summary className="Highsummary">Toegankelijkheid</summary>
-                        <p className="InfoAccessibility">Onze meest gestelde vragen over onze toegankelijkheidsopties</p>
+                            <summary className="Highsummary">Visitor care: ability & access</summary>
+                        <p className="InfoAccessibility">Our most asked questions about visitor care</p>
                         <div className="Info">
                             <details>
-                                <summary className="Lowsummary" >Kan ik Nxt Museum bezoeken als ik epilepsie heb?</summary>
-                                <p className="HiddenText">Onze tentoonstelling bevat flitsende videobeelden en harde geluiden, wat ongeschikt kan zijn voor personen met epilepsie</p>
+                                    <summary className="Lowsummary" >Can I enter Nxt Museum’s exhibition if I have epilepsy?</summary>
+                                    <p className="HiddenText">This exhibition contains flashing video images and loud sounds which may not be suitable for people with epilepsy.</p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Is het museum rolstoeltoegankelijk?</summary>
-                                <p className="HiddenText">Ja, de tentoonstelling en het restaurant zijn toegankelijk via een rolstoelhelling en alternative routes.
-                                    We beschikken ook over mindervalide-parkeerplekken die gereserveerd kunnen worden via ons contact formulier.</p>
+                                    <summary className="Lowsummary" >Is the museum accessible for wheelchairs?</summary>
+                                    <p className="HiddenText">Yes, the exhibition, restaurant and toilets are accessible via wheelchair ramps or alternative routes.
+                                        We also have disabled parking slots which may be booked upon reservation by leaving us a message here.</p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Bieden jullie begeleiders tickets aan?</summary>
-                                <p className="HiddenText">Bezoekers die niet zelfstandig door het museum kunnen bewegen, mogen gratis een begeleider meenemen.
-                                    Dit is geldig voor bezoekers met loophulpmiddelen, gezicht- en gehoorbeperkingen. Neem contact op via ons contactformulier</p>
+                                    <summary className="Lowsummary" >Disabled Parking Spots</summary>
+                                    <p className="HiddenText">We have disabled parking slots at the museum which may be booked upon reservation by leaving us a message here.</p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Parkeerplaatsen voor mindervaliden</summary>
-                                <p className="HiddenText">Er zijn parkeerplaatsen voor mindervalide beschikbaar. Je kan deze reserveren door hier een bericht achter te laten.</p>
+                                    <summary className="Lowsummary" >Do you offer companion tickets?</summary>
+                                    <p className="HiddenText">Visitors who are unable to navigate their way through the museum independently can bring a companion with them for free.
+                                        Please get in touch via our contact form </p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Is het museum geschikt voor kinderen?</summary>
-                                <p className="HiddenText">Nxt Museum is geliefd door jong en oud! Veel van onze kunstwerken en installaties bevinden zich in donkere kamers met harde geluiden,
-                                    sterke taal, naaktheid en flitsende video’s. Houd hier rekening mee als je overweegt om jonge kinderen meenemen.</p>
+                                    <summary className="Lowsummary" >Is the museum suitable for children?</summary>
+                                    <p className="HiddenText">When it comes to the youngest amongst us, Nxt Museum is enjoyed by children of all age groups.
+                                        However, many of our artworks and installations are housed within dark rooms with loud sounds, some strong language, nudity, and flashing videos.
+                                        Be aware: one artwork in this exhibition contains sexual scenes and nudity. Please keep this in mind when considering if you’d like to bring young children.</p>
                                 </details>
                             <details>
-                                <summary className="Lowsummary" >Vanaf welke leeftijd hebben kinderen zonder begeleiding toegang tot het museum?</summary>
-                                <p className="HiddenText">Kinderen vanaf 12 jaar hebben zonder begeleiding van een volwassene toegang tot het museum, maar mogen geen jongere kinderen begeleiden.
-                                    Ouders en voogden van kinderen van 12 – 18 jaar zijn verantwoordelijk voor en aanspreekbaar op het gedrag van hun kinderen.</p>
+                                    <summary className="Lowsummary" >From what age can my kids visit Nxt, unaccompanied by an adult?</summary>
+                                    <p className="HiddenText">Children from the age of 12 may visit the Museum without being accompanied by an adult. However, they cannot supervise young children.
+                                        Parents and guardians of unaccompanied children aged 12 to 18 are responsible and accountable for the behaviour of their children at all times.</p>
                                 </details>
                             </div>
                         </details>
                     </div>
                     <div className="Museum">
                     <details>
-                        <summary className="Highsummary">In het museum</summary>
+                        <summary className="Highsummary">In het museum</summary>                        {/*HIER GEBLEVEN*/}
                         <p className="InfoMuseum">Alle meest gestelde vragen over het museum zelf</p>
                         <div className="Info">
                             <details>
