@@ -1,0 +1,19 @@
+footer {
+    border-top: 4px solid white;
+    width: 100vw;
+}
+
+footer { text-align: center; }
+
+footer nav ul{
+    display: inline-block;
+    text-align: left;
+    margin: 10px 50px;
+}
+
+
+    footer .information div {
+        display: inline-block;
+        text-align: left;
+        margin: 10px 50px;
+    }

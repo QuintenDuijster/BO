@@ -1,0 +1,32 @@
+header {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    border-bottom: 4px solid white;
+    z-index: 2;
+}
+
+header .Left,
+header .Right,
+header .Logo { display: flex; }
+
+header .Logo p{ color: white; }
+
+header .Left li,
+header .Right li { margin: auto 15px; }
+
+header .Right li{ margin: 20px; }
+
+header .Left { float: left; }
+
+header .Right { float: right; }
+
+@media screen and (max-width: 865px) {
+    header .Left,
+    header .Right,
+    header .Logo { display: block; }
+
+    header .Left { float: none; }
+
+    header .Right { float: none; }
+}
