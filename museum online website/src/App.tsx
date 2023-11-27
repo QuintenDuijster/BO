@@ -15,60 +15,57 @@ const App: React.FC = () =>
 
             <main>
                 <div className="main">
-                    <article>
-                        <h1>Nxt Museum</h1>
-                        <p>
-                            Het eerste museum in Nederland dat zich volledig richt op mediakunst. <br />
-                            Ontdek grootschalige, digitale kunstinstallaties die je blik verruimen <br />
-                            en de zintuigen op scherp stellen. De kunst van morgen, vandaag.
-
-                        </p>
-                    </article>
+                    <h1>Nxt Museum</h1>
+                    <p>
+                        The home of new media art. Discover large scale, multi-sensory exhibitions which challenge assumptions and open minds.<br />
+                        We seek, show and question what is Nxt.
+                    </p>
                 </div>
                 <div className="articles">
-                    <article className="Left">
-                        <h2>Wat is Nxt?</h2>
+                    <article className="left">
+                        <h3>What Is Nxt</h3>
                         <p>
-                            Nxt Museum is het eerste museum in Nederland dat zich volledig richt op mediakunst.<br />
-                            We exposeren kunstwerken die gebruik maken van moderne technologieen van het heden en van de toekomst.<br />
-                            Omdat kunst de tijdsgeest weerspiegelt,<br />
-                            geloven wij dat de meest innovatieve kunst ons de mogelijkheid geeft om op de impact van technologische ontwikkelingen te reflecteren.<br />
-                            Een moment van bezinning in een realiteit die alsmaar sneller doorontwikkelt.
+                            Nxt Museum is the first museum in the Netherlands dedicated to new media art. We focus on art that uses modern tools to embody modern times.<br />
+                            We believe that the tools used in artistic expression reflect the times we live in.<br />
+                            That makes them the perfect means to understand contemporary complexities allowing us to recognise, relate and reflect on our realities.<br />
                         </p>
-                        <a>Tentoonstellingen</a>
+                        <a></a>
                     </article>
-                    <article className="Right">
-                        <h2>Openingstijden</h2>
-                        <ul>
-                            <li>Dinsdag: 10:30 - 20:30</li>
-                            <li>Woensdag: 11:00 - 21:30</li>
-                            <li>Donderdag: 10:30 - 22:30</li>
-                            <li>Zaterdag: 10:30 - 20:30</li>
-                            <li>Zondag: 10:30 - 22:30</li>
-                        </ul>
-                        <a>Contact</a>
-                    </article>
-                    <article className="Left">
-                        <h2>De ruimte</h2>
+                    <article className="right">
+                        <h3>Opening hours</h3>
                         <p>
-                            Het museum is gevestigd in een voormalige productiestudio in het hart van Amsterdam-Noord - een plek die zich bij uitstek leent voor het ontdekken,<br />
-                            maken en tentoonstellen van mediakunst.<br />
-                            Deze vorm van kunst experimenteert met technologische mogelijkheden en toepassingen; dynamisch en niet gebonden aan een vorm.<br />
-                            Onze  ruimte biedt een broedplaats voor deze vorm van kunst; een plek waar verschillende kunststromingen en wetenschappen samenkomen en tentoongesteld kunnen worden.<br />
-                            Een plek voor live performances, educatie, creatie, zang, dans en meer.
+                            Sun - Tues: 10:30 - 20:30<br />
+                            Wed: 10:30 - 21:30<br />
+                            Thurs - Sat: 10:30 - 22:30<br />
+                            Maandag: closed<br />
+                            Disnsdag: 10:30 - 20:30<br />
+                            Woensdag: 10:30 - 21:30<br />
+                            DonderDag: 10:30 - 22:30 <br />
+                            Vrijdag: closed <br />
+                            Zaterdag: 10:30 - 22:30<br />
+                            Zondag: 10:30 - 20:30<br />
                         </p>
-                        <a>Meer Over Nxt</a>
+                        <a></a>
                     </article>
-                    <article className="Right">
-                        <h2>Onze missie</h2>
+                    <article className="left">
+                        <h3>The Space</h3>
                         <p>
-                            Het is onze missie om vooruitstrevende vormen van creativiteit te stimuleren.<br />
-                            Wij zien de toekomst als een van de meest fascinerende concepten van het menselijk brein.<br />
-                            Het is een onuitputtelijke bron van inspiratie die ons in de greep houdt en de vraag oproept: 'What`s Nxt?'.<br />
-                            Met het oog op technologische en sociale ontwikkelingen is deze vraag een groter mysterie dan ooit tevoren.<br />
-                            Ga je mee op zoek naar het antwoord?
+                            Based in North Amsterdam, the space is built specifically to explore new media art; art that expands technical possibilities and applications,<br />
+                            is dynamic and unbound by form and that generates movement whether physical, mental or emotional.<br />
+                            The space provides all the ingredients for these progressive art forms to grow, flourish and evolve.<br />
+                            Nxt Museum is a place where creatives bring their visions to life.<br />
                         </p>
-                        <a>Meer Over Nxt</a>
+                        <a></a>
+                    </article>
+                    <article className="right">
+                        <h3>Our Purpose</h3>
+                        <p>
+                            It’s our mission to facilitate new and next iterations of creative expression.<br />
+                            Everything we do, want and fear relates directly to the future. It is one of the most fascinating concepts for the human mind.<br />
+                            A thrilling source of inspiration that drives endless questions.<br />
+                            Today, these questions are more important and complex than ever. What’s next? We don’t know, but we are endlessly curious to explore together.<br />
+                        </p>
+                        <a></a>
                     </article>
                 </div>
             </main>
@@ -79,3 +76,5 @@ const App: React.FC = () =>
 };
 
 export default App;
+
+

@@ -5,21 +5,11 @@ main .main {
     margin-top: 130px;
 }
 
-main .main article {
-    text-align: center;
-    padding-top: 100px;
-}
+main
 
-main .articles{
-    color: black;
-    margin: 20px 0px 20px 0px;
-}
 
-main .articles article {
-    background-color: white;
-    width: 40vw;
-    margin: 20px;
-}
+
+
 
 main .Left {
 
@@ -27,4 +17,12 @@ main .Left {
 
 main .Right {
 
+}
+
+main article{
+    width: 30vw;
+}
+
+.main .articles{
+    display: grid;
 }
