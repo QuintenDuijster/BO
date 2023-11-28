@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Reusable/pageStyle.css';
+import '../../Reusable/pageStyle.css';
 import './CSS/Header.css';
 
 const Header: React.FC = () => 

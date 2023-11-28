@@ -29,8 +29,8 @@ const HooftPagina: React.FC = () =>
                         </p>
                     </article>
                 </div>
-                <div className="articles">
-                    <article className="Left">
+                <div className="grids">
+                    <article className="grid1">
                         <h2>Wat is Nxt?</h2>
                         <p>
                             Nxt Museum is het eerste museum in Nederland dat zich volledig richt op mediakunst.<br />
@@ -41,7 +41,7 @@ const HooftPagina: React.FC = () =>
                         </p>
                         <a>Tentoonstellingen</a>
                     </article>
-                    <article className="Right">
+                    <article className="grid2">
                         <h2>Openingstijden</h2>
                         <ul>
                             <li>Dinsdag: 10:30 - 20:30</li>
@@ -52,7 +52,7 @@ const HooftPagina: React.FC = () =>
                         </ul>
                         <a>Contact</a>
                     </article>
-                    <article className="Left">
+                    <article className="grid3">
                         <h2>De ruimte</h2>
                         <p>
                             Het museum is gevestigd in een voormalige productiestudio in het hart van Amsterdam-Noord - een plek die zich bij uitstek leent voor het ontdekken,<br />
@@ -63,7 +63,7 @@ const HooftPagina: React.FC = () =>
                         </p>
                         <a>Meer Over Nxt</a>
                     </article>
-                    <article className="Right">
+                    <article className="grid4">
                         <h2>Onze missie</h2>
                         <p>
                             Het is onze missie om vooruitstrevende vormen van creativiteit te stimuleren.<br />
