@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Herbruikbaar/Header.tsx';
-import Footer from '../Herbruikbaar/Footer.tsx';
+import Header from '../Reusable/Header.tsx';
+import Footer from '../Reusable/Footer.tsx';
 
 
 
