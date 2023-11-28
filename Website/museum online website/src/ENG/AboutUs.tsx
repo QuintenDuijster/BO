@@ -1,19 +1,20 @@
 import React, { useEffect } from 'react';
-import './css/OverNxt.css';
-import './Herbruikbaar/pageStyle.css';
-import Header from './Herbruikbaar/Header.tsx';
-import Footer from './Herbruikbaar/Footer.tsx';
+import Header from '../Reusable/Header.tsx';
+import Footer from '../Reusable/Footer.tsx';
 
+//CSS
+import '../Reusable/PageStyle.css';
+import './CSS/AboutUs.css';
 
-const OverNxt: React.FC = () =>
+const AboutUs: React.FC = () =>
 {
     useEffect(() =>
     {
-        document.title = 'Nxt Museum | OverNxt';
+        document.title = 'Nxt Museum | AboutUs';
     }, []);
 
     return (
-        <div className="OverNxt">
+        <>
             <Header />
 
             <main>
@@ -472,9 +473,10 @@ const OverNxt: React.FC = () =>
                     </details>
                 </article>
             </main>
+
             <Footer />
-        </div>
+        </>
     );
 };
 
-export default OverNxt;
+export default AboutUs;

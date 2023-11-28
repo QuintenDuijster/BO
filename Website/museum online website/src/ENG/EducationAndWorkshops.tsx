@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
-import './css/Tickets.css';
-import './Herbruikbaar/pageStyle.css';
-import Header from './Herbruikbaar/Header.tsx';
-import Footer from './Herbruikbaar/Footer.tsx';
+import Header from '../Reusable/Header.tsx';
+import Footer from '../Reusable/Footer.tsx';
 
-const Uitjes: React.FC = () =>
+//CSS
+import '../Reusable/PageStyle.css';
+import './CSS/EducationAndWorkshops.css';
+
+const EducationAndWorkshops: React.FC = () =>
 {
     useEffect(() =>
     {
-        document.title = 'Nxt Museum | Uitjes';
+        document.title = 'Nxt Museum | EducationAndWorkshops';
     }, []);
 
-
     return (
-        <div className="Uitjes">
-            <title>Next Museum | </title>
+        <>
             <Header />
 
             <main>
@@ -37,7 +37,7 @@ const Uitjes: React.FC = () =>
                         <a href="./OverNxt" title="Meer over het Nxt museum">Over ons</a>
                         <a href="./Faq" title="Veelgestelde vragen">Faq</a>
                     </p>
-                    </div>
+                </div>
 
                 <div className="Educatie" id="Educatie">
 
@@ -102,9 +102,8 @@ const Uitjes: React.FC = () =>
             </main >
 
             <Footer />
-
-        </div >
+        </>
     );
 };
 
-export default Uitjes;
+export default EducationAndWorkshops;

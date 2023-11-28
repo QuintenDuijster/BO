@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import './Herbruikbaar/pageStyle.css';
-import './Herbruikbaar/hoverLink.css';
-import './css/Contact.css';
-import Header from './Herbruikbaar/Header.tsx';
-import Footer from './Herbruikbaar/Footer.tsx';
+import Header from '../Reusable/Header.tsx';
+import Footer from '../Reusable/Footer.tsx';
 
+//CSS
+import '../Reusable/PageStyle.css';
+import './CSS/Contact.css';
 
 const Contact: React.FC = () =>
 {
@@ -14,8 +14,7 @@ const Contact: React.FC = () =>
     }, []);
 
     return (
-        <div className="Contact">
-
+        <>
             <Header />
 
             <main>
@@ -39,7 +38,7 @@ const Contact: React.FC = () =>
                     <p>
                         Nxt Museum verbindt kunst met technologie en wetenschap via grootschalige kunstinstallaties op 1400 m2 terrein in Amsterdam-Noord.
                         Onze focus ligt op nieuwe technologieën, gecombineerd met een constante impuls om op zoek te gaan naar de toekomst – vruchtbare grond voor vooruitstrevende samenwerkingen!
-                    </p>    
+                    </p>
                     <p>
                         Nxt Museum en Samsung Electronics Benelux hebben de krachten gebundeld om technologie en kunst toegankelijk te maken voor iedereen die zoekt naar what’s next in populaire cultuur.
                         De gezamenlijke missie is het stimuleren van creativiteit door het gebruik van technologie.
@@ -83,7 +82,7 @@ const Contact: React.FC = () =>
             </main>
 
             <Footer />
-        </div>
+        </>
     );
 };
 
