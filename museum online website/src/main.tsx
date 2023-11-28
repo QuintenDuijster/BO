@@ -4,14 +4,14 @@ import './index.css'
 
 
 //ENG
-import MainPage from './ENG/MainPage';
-import AboutUs from './ENG/AboutUs';
-import EngContact from './ENG/Contact';
-import EducationAndWorkshops from './ENG/EducationAndWorkshops';
-import VisitorInformation from './ENG/VisitorInformation';
-import WhatsLive from './ENG/WhatsLive';
-import Tickets from './ENG/Tickets';
-import Faq from './ENG/Faq';
+import MainPage from './EN/MainPage';
+import AboutUs from './EN/AboutUs';
+import EngContact from './EN/Contact';
+import EducationAndWorkshops from './EN/EducationAndWorkshops';
+import VisitorInformation from './EN/VisitorInformation';
+import WhatsLive from './EN/WhatsLive';
+import Tickets from './EN/Tickets';
+import Faq from './EN/Faq';
 
 //NL
 import HoofdPagina from './NL/HoofdPagina';
