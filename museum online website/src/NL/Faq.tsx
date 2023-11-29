@@ -1,10 +1,10 @@
 ﻿import React from 'react';
-import Header from './Reusable/Header.tsx';
-import Footer from './Reusable/Footer.tsx';
+import Header from './Herbruikbaar/Header.tsx';
+import Footer from './Herbruikbaar/Footer.tsx';
 
 const FAQ: React.FC = () => {
     return (
-        <div className="Faq">
+        <>
 
             <Header />
             <main>
@@ -271,7 +271,7 @@ const FAQ: React.FC = () => {
 
             <Footer />
 
-        </div>
+        </>
     );
 };
 
