@@ -5,7 +5,7 @@ import './CSS/Header.css';
 const Header: React.FC = () => 
 {
     return (
-        <header> {/* dit is de header voor de website! */}
+        <header>
             <nav>
                 <ul className="Left">
                     <li>
@@ -34,36 +34,61 @@ const Header: React.FC = () =>
                             </ul>
                         </div>
                     </li>
-                    <li className="dropdown">
-                        <span><a href="Uitjes">Uitjes</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="NL/Uitjes?section=Bedrijfsuitjes">Bedrijfsuitje</a></li>
-                                <li><a className="hoverLink" href="NL/Uitjes?section=Educatie">Educatie</a></li>
-                                <li><a className="hoverLink" href="NL/Uitjes?section=Workshops">Workshops</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li className="dropdown">
-                        <span><a href="Contact">Contact</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="NL/Contact?section=Vacatures">Vacatures</a></li>
-                                <li><a className="hoverLink" href="NL/Contact?section=PartnerWorden">Partner worden</a></li>
-                                <li><a className="hoverLink" href="NL/Contact?section=Pers">Pers</a></li>
-                            </ul>
-                        </div>
+                    <li>
+                        <span><a href="NL/OverOns">Over ons</a></span>
+                        <ul>
+                            <li><a href="NL/OverOns">Informatie over het next museum</a></li>
+                            <li><a href="NL/OverOns">Het team</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a className="hoverLink" href="NL/Faq">Faq</a>
+                        <span><a href="NL/BezoekersInformatie">Bezoekers informatie</a></span>
+                        <ul>
+                            <li><a href="NL/BezoekersInformatie">Openingstijden</a></li>
+                            <li><a href="NL/BezoekersInformatie">Roete beschrijving</a></li>
+                            <li><a href="NL/BezoekersInformatie">Groepsbezoek</a></li>
+                            <li><a href="NL/BezoekersInformatie">Prive museumervaring</a></li>
+                            <li><a href="NL/BezoekersInformatie">Begleide tour</a></li>
+                            <li><a href="NL/BezoekersInformatie">Bezoekers voorwaarden</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span><a href="NL/Contact">Contact</a></span>
+                        <ul>
+                            <li><a href="NL/Contact">Plan een evenement</a></li>
+                            <li><a href="NL/Contact">Werk met ons samen</a></li>
+                            <li><a href="NL/Contact">Creatieve samenwerking</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span><a href="NL/EducatieEnWorkshops">Educatie en workshops</a></span>
+                        <ul>
+                            <li><a href="NL/EducatieEnWorkshops">Onderwijs</a></li>
+                            <li><a href="NL/EducatieEnWorkshops">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span><a href="NL/WatIsLive">Wat is live</a></span>
+                        <ul>
+                            <li><a href="NL/WatIsLive">Nxt blog</a></li>
+                            <li><a href="NL/WatIsLive">Evenementen tentoonstellingen</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span><a href="NL/WatIsLive">Faq</a></span>
+                        <ul>
+                            <li><a href="NL/WatIsLive">Faq</a></li>
+                            <li><a href="NL/WatIsLive">From</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <ul className="Right">
+                <ul>
                     <li>
-                        <a className="hoverLink" href="NL/Tickets">NL | ENG</a>
-                    </li>
-                    <li>
-                        <a className="hoverLink" href="NL/Tickets">Tickets</a>
+                        <span><a href="NL/Kaartjes">Kaartjes</a></span>
+                        <ul>
+                            <li><a href="NL/Kaartjes">Kaartjes</a></li>
+                            <li><a href="NL/Kaartjes">Ticket ondersteuning</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
