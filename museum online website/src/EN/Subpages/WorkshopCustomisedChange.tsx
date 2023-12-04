@@ -12,32 +12,46 @@ const WorkshopCustomisedChange: React.FC = () => {
             <main>
                 <div className="Info">
                     <h1>Customised Change</h1>
-                    <p></p>
+                    <p>Led by AIM AT ART’s consultants, teams are stimulated to reflect and align on the questions facing your organisation, and aim for a distinctive change process.</p>
                     <div className="VerwachtingWorkshop">
-                        <h2>WAT TE VERWACHTEN?</h2>
+                        <h2>What to expect?</h2>
                         <ul>
                             <li>
-                                Discover & Design: Hoe is uw huidige organisatie vormgegeven en waar wilt u naartoe?
+                                Discover & Design: How has your current organisation been shaped, and where do you want to go?
                             </li>
                             <li>
-                                Create & Commit: Creatief brainstormen om ambities vast te stellen en je eigen nieuwe verhaal onder de knie te krijgen
+                                Create & Commit: Creative brainstorm to establish ambitions and to master your own new story
                             </li>
                             <li>
-                                Engage & Act: Hoe breng je je nieuwe gedrag binnen de organisatie tot stand en hoe daag je jezelf uit om te blijven innoveren?
+                                Engage & Act: How do you establish your new behaviour within the organisation, and how do you challenge yourself to continue innovating?
                             </li>
                         </ul>
                     </div>
                     <div className="WhatToLearn">
-                        <h2>GOED OM TE WETEN:</h2>
+                        <h2>Good to know:</h2>
                         <ul>
                             <li>
-                                4 uur programma in Nxt Museum
+                                4 hour program at Nxt Museum
                             </li>
                             <li>
-                                Voor leiderschapsteams tot 35
+                                For leadership teams of up to 35 people
                             </li>
                             <li>
-                                Programma wordt afgestemd op de relevante thema’s binnen uw organisatie
+                                Program is tailored to the relevant themes within your organisation
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="Kosten">
+                        <h2>Costs:</h2>
+                        <ul>
+                            <li>
+                                Elementary schools & Highschools:  130€ + 25€/per person
+                            </li>
+                            <li>
+                                Students: 130€ + 28€/per person
+                            </li>
+                            <li>
+                                Companies: 130€ + 39,75€/per person
                             </li>
                         </ul>
                     </div>

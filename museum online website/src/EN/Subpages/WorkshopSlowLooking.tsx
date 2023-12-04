@@ -3,7 +3,6 @@ import '../Herbruikbaar/pageStyle.css';
 import Header from '../Reusable/Header.tsx';
 import Footer from '../Reusable/Footer.tsx';
 
-
 const WorkshopSlowLooking: React.FC = () => {
     return (
         <div className="Workshop">
@@ -14,66 +13,69 @@ const WorkshopSlowLooking: React.FC = () => {
                     <h1>Slow Looking</h1>
                     <p>
                         <img src="Images/WorkshopImg/NXT_Random-International_PR_Riccardo-De-Vecchi-photographer-12-1024x778.jpg" alt="The developer isn't good at coding here should be an image" />
+                        In this workshop, you explore a single artwork through a series of guided activities, including close looking,
+                        careful listening, creative writing – and drawing. Connect your findings to bigger systems and integrate the concept into your own learning
+                        and innovation process. This workshop is set up to empower anyone to take the time to look slow in a world of fast information.
                     </p>
                     <div className="VerwachtingWorkshop">
-                        <h2>WAT TE VERWACHTEN?</h2>
+                        <h2>What will you get up to?</h2>
                         <ul>
                             <li>
-                                Discover & Design: Hoe is uw huidige organisatie vormgegeven en waar wilt u naartoe?
+                                Introduction
                             </li>
                             <li>
-                                Create & Commit: Creatief brainstormen om ambities vast te stellen en je eigen nieuwe verhaal onder de knie te krijgen
+                                Museum exhibition visit – explore connection to the 10 large scale new media artworks in the current exhibition: ‘Life in a Different Resolution’ and Realtime
                             </li>
                             <li>
-                                Engage & Act: Hoe breng je je nieuwe gedrag binnen de organisatie tot stand en hoe daag je jezelf uit om te blijven innoveren?
+                                Workshop Slow Looking 6 steps at one specific installation in the current exhibition.
                             </li>
                         </ul>
                     </div>
                     <div className="WhatToLearn">
-                        <h1>WAT GA JE LEREN?</h1>
+                        <h1>What all learn?</h1>
                         <ul>
                             <li>
-                                Vertraag: om de wereld goed te observeren
-                                Maak kennis met de concepten van aandachtig kijken en zorgvuldig luisteren
-                                Ontdek hoe je past in grotere (sociale) constructies zoals school, sport of werk
+                                Slow down: to observe the world carefully
+                                Encounter the concepts of close looking and careful listening
+                                Explore how you fit into bigger (social) constructs like school, sports, or work
                             </li>
                             <li>
-                                Deel: wissel verhalen uit over mensen, plaats en identiteit
-                                Leer hoe je verhalen op een betekenisvolle manier kunt verzamelen en vertellen
-                                Maak kennis met verschillende communicatiemodellen en manieren van interactie
+                                Share: Exchange stories about people, place, and identity
+                                Learn how to collect and tell stories in a meaningful way
+                                Get to know different communication models and modes of interaction
                             </li>
                             <li>
-                                Leer: over hoe jouw eigen leven in verbinding staat met grotere menselijke verhalen
-                                Leer meer over thema’s en technologieën waar je dagelijks mee in aanraking komt en hoe je deze kunt interpreteren
-                                Krijg nieuwe inzichten met betrekking tot je dagelijks leven, gemeenschappen en identiteiten zowel online en offline
+                                Reflect: on how your own live connects to bigger human stories
+                                Learn more about themes and technologies that you use every day – and how to read them
+                                Gain new insights into your everyday lives, communities, and identities – on- and offline
                             </li>
                         </ul>
                     </div>
                     <div className="GoodToKnow">
-                        <h2>GOED OM TE WETEN:</h2>
+                        <h2>Good to know:</h2>
                         <ul>
                             <li>
-                                4 uur programma in Nxt Museum
+                                Max 30 participants per workshop
                             </li>
                             <li>
-                                Voor leiderschapsteams tot 35 personen
+                                Programme of 2h 45
                             </li>
                             <li>
-                                Programma wordt afgestemd op de relevante thema’s binnen uw organisatie
+                                This workshop is for students of all ages (different set up for under 12 years old)
                             </li>
                         </ul>
                     </div>
                     <div className="Kosten">
-                        <h2>KOSTEN (inclusief museumbezoek):</h2>
+                        <h2>Costs:</h2>
                         <ul>
                             <li>
-                                Basisscholen en middelbare scholen: €130 + €25 per persoon
+                                Elementary schools & Highschools:  130€ + 25€/per person
                             </li>
                             <li>
-                                Studenten: €130 + €28 per persoon
+                                Students: 130€ + 28€/per person
                             </li>
                             <li>
-                                Bedrijven: €130 + €39,75 per persoon
+                                Companies: 130€ + 39,75€/per person
                             </li>
                         </ul>
                     </div>

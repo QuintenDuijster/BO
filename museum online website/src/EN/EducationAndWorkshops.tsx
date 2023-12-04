@@ -21,21 +21,20 @@ const EducationAndWorkshops: React.FC = () =>
                 <h1>Dagje weg?</h1>
 
                 <p>
-                    We hebben allerlei opties hier op een rijtje gezet dus er is voor iedereen wel een unieke manier om ons museum te beleven!
+                    We put all your options on this page here. There's a fun experience for everyone!
                 </p>
 
                 <div className="Groepsbezoek" id="Bedrijfsuitjes">
 
-                    <h1>Groepsbezoek</h1>
+                    <h1>Group booking</h1>
 
                     <p>
-                        Speciale momenten zijn het mooist als ze gedeeld worden!
-                        Bezoek onze tentoonstellingen met vrienden of teamgenoten en laat je meevoeren naar geheel nieuwe dimensies.
-                        Duik in meeslepende kunstinstallaties die creatieve ideeën combineren met technologische innovatie.
-                        Een bezoek aan Nxt zal de geest betoveren, zal zorgen voor inspiratie en zal een creatieve boost geven aan jou, je vrienden of je team.
-                        <a href="./Tickets" title="Tickets bestellen" target="_blank">Go to tickets</a>
-                        <a href="./OverNxt" title="Meer over het Nxt museum">Over ons</a>
-                        <a href="./Faq" title="Veelgestelde vragen">Faq</a>
+                        Special moments are best when they're shared! Visit our exhibitions with friends or teammates and be inspired by entirely new dimensions.
+                        Delve into art installations that fuse creative ideas with technological innovation. 
+                        A visit to Nxt will mesmerise the mind and provide inspiration and creative boost for you, your mates or team. 
+                        <a href="./Tickets" title="Order your tickets" target="_blank">Go to tickets</a>
+                        <a href="./OverNxt" title="More about Nxt">About us</a>
+                        <a href="./Faq" title="Frequently asked questions">Faq</a>
                     </p>
                 </div>
 
@@ -44,12 +43,13 @@ const EducationAndWorkshops: React.FC = () =>
                     <h1>Excursies voor scholen</h1>
 
                     <p>
-                        Ook voor scholen hebben we onze tentoonstellingen beschikbaar gesteld.
-                        Nxt is jouw venster naar de toekomst, waar je kunt zien hoe ideeën en innovaties de wereld vormgeven.
-                        Duik in de interactieve en inspirerende presentaties, bekijk onze <a href="./OverNxt" title="Over onze tentoonstellingen">tentoonstellingen</a> en laat je meeslepen.
+                        We opened our exhibitions for schools and students.
+                        Let Nxt be your peek into the future, where you can see ideas take of our modern world take shape.
+                        Dive into interactive and inspiring presentations, take a look at <a href="./OverNxt" title="About our exhibitions">Exhibitions</a> and drift off.
 
-                        <a href="./Tickets" title="Hbo, mbo en universiteit">Groepsbezoek</a> voor mbo-, hbo- en universitaire studenten                           Of kom je op bezoek met een schoolklas? Boek
-                        <a href="./Tickets" title="Basis- en middelbarescholen"> hier </a> je groepsboekingen van scholieren in het basis- en voortgezet onderwijs.
+                        <a href="./Tickets" title="Hbo, mbo en universiteit">School booking</a> for mbo-, hbo- and universitaire students
+                        Or are you visiting with a schoolclass?
+                        <a href="./Tickets" title="Basis- en middelbarescholen"> Here </a> you can book your tickets for students of primaryt- and secondary education.
                     </p>
                 </div>
 
@@ -58,43 +58,37 @@ const EducationAndWorkshops: React.FC = () =>
                     <h1> Workshops </h1>
 
                     <p>
-                        Binnen deze ruimte nodigen we alle denkers, makers, luisteraars, scheppers en vernietigers uit om ons te vergezellen in onze wil te onderzoeken,
-                        te laten zien en te debatteren over wat de toekomst te bieden heeft.
-                        We streven ernaar om leren op het gebied van createch toegankelijker te maken en onze gemeenschap van nieuwe vaardigheden te voorzien.
+                        Within this space, we invite all thinkers, makers, listeners, creators and destroyers to join us in our quest to seek,
+                        show and debate what’s next. We aim to facilitate learning in the fields of createch, empowering our community with new skills.
+                        We have two workshops on offer for companies and school groups, at a time and date that suits you.
                     </p>
-                    <h4>Onze workshops</h4>
+                    <h4>Our workshops</h4>
                     <ul>
                         <li>
                             <p>
                                 <a href="WorkshopSlowLooking">Slow Looking</a>
-                                De Slow Looking Workshop is een oefening om de manier waarop we naar de wereld om ons heen kijken te vertragen
-                                en om zo diepgaand leren over verschillende onderwerpen te stimuleren.
-                            </p>
+                                The Slow Looking Workshop is an exercise to slow down the ways in which we look at the world around us and how this practice can support deep
+                                learning across subject matters.
                         </li>
                         <li>
                             <p>
                                 <a href="WorkshopFilterCreation">Filter Creation</a>
-                                We kennen en gebruiken ze allemaal: Augmented Reality Filters.
-                                In deze workshop leer je om je eigen filter te maken en zo je verhaal te vertellen in een AR-omgeving.
+                                We all know and use them: Augmented Reality Filters. In this workshop you will learn how to create your very own filter to tell your story in an AR environment.
                             </p>
                         </li>
                         <li>
                             <p>
                                 <a href="WorkshopCustomisedChange">Customised Change</a>
-                                Soms moet er iets gebeuren. Om de energie erin te krijgen, weer geïnspireerd te raken of tot actie over te gaan.
-                                Wij vertrouwen hierbij op de kracht van kunst. Het doorbreekt je dagelijks denken en dat geeft ruimte voor nieuwe perspectieven.
-                                En wij stellen rake vragen. Het doel? Een nieuwe mindset voor duurzame verandering.
-                                Hedendaagse kunst schetst een beeld van de toekomst of bevraagt het heden. Het nodigt uit tot reflectie. Dat is zeker.
-                                Wij vinden de tentoonstelling die aansluit bij de vragen van jouw organisatie. En gaan voor een onderscheidend verandertraject.
+                                Sometimes, something has to happen to spark your energy, get you inspired and motivate you to take action. 
+                                We believe in the power of art to have this effect.
+                                It breaks through your everyday thought patterns and creates space for new perspectives.
+                                And we ask the questions that count, too. The goal: a new mindset to facilitate sustainable change.
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a href="WorkshopToekomstverkenning">Toekomstverkenning</a>
-                                Duik op een speelse manier in de toekomst. Laat je, met kunst als katalysator, verbazen en inspireren door haar eindeloze mogelijkheden.
-                                In de kunst ligt de toekomst al voor het oprapen en word je uitgedaagd om je dagelijks denken los te laten. Leer om grootser te denken, in kansen en vanuit nieuwe perspectieven.
-                                Vanuit deze nieuwe mindset vertaal je de uitkomsten naar jouw eigen organisatie.
-                                Op welke manier kan de toekomst de huidige koers van jouw organisatie beïnvloeden? Kies het pad dat je wilt bewandelen en zet de eerste stap voorwaarts.
+                                <a href="WorkshopToekomstverkenning">Explore The Future</a>
+                                To gain insights into the future, exploring art can serve as a foundation for teams to bridge the gap between the present and what lies ahead.
                             </p>
                         </li>
                     </ul>

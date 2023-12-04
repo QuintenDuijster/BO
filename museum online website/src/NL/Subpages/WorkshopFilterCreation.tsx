@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Reusable/Header.tsx';
-import Footer from '../Reusable/Footer.tsx';
+import Header from '../Herbruikbaar/Header.tsx';
+import Footer from '../Herbruikbaar/Footer.tsx';
 
 const WorkshopFilterCreation: React.FC = () => {
     return (
@@ -9,7 +9,14 @@ const WorkshopFilterCreation: React.FC = () => {
             <main>
                 <div className="Info">
                     <h1>Filter creation</h1>
-                    <p></p>
+                    <p>Maskers kennen lange tradities in verschillende culturen en een kortere – maar impactvolle – traditie in de digitale wereld.
+                        Tijdens dit vier uur durende programma verzorgen wij de tools en maak je je eigen AR-filtermasker.
+
+                        Laat je inspireren door nieuwe mediakunstenaars, leer de ins en outs kennen van het gebruik van AR-software,
+                        en breng je werk in verband met de installaties in het museum. Deze workshop doet een beroep op je verbeeldingskracht en creativiteit en
+                        daagt je uit om te laten zien wat jou – jou maakt.
+
+                        Tot slot heb je de kans je AR-creaties te laten zien in een Filter Creation Spotlight in Nxt Museum.</p>
                     <div className="VerwachtingWorkshop">
                         <h2>Wat kun je verwachten?</h2>
                         <ul>
@@ -60,7 +67,7 @@ const WorkshopFilterCreation: React.FC = () => {
                         </ul>
                     </div>
                     <div className="Kosten">
-                        <h2>kosten: (inclusief museumbezoek)</h2>
+                        <h2>Kosten: (inclusief museumbezoek)</h2>
                         <ul>
                             <li>
                                 Basisscholen en middelbare scholen: €175 + €40 per persoon
