@@ -9,26 +9,22 @@ const Footer: React.FC = () =>
         <footer>
             <nav>
                 <ul>
-                    <li><a className="hoverLink" href="OverNxt"><h3>OverNxt</h3></a></li>
-                    <li><a className="hoverLink" href="OverNxt?section=OnsTeam">Ons team</a></li>
-                    <li><a className="hoverLink" href="OverNxt?section=EtenenDrinken">Eten en Drinken</a></li>
-                    <li><a className="hoverLink" href="OverNxt?section=OnzeHuisregels">Onze huisregels</a></li>
+                    <li><a className="hoverLink" href="#"><h3>tbt</h3></a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
                 </ul>
                 <ul>
-                    <li><a className="hoverLink" href="Uitjes"><h3>Uitjes</h3></a></li>
-                    <li><a className="hoverLink" href="Uitjes?section=Bedrijfsuitjes">Bedrijfsuitje</a></li>
-                    <li><a className="hoverLink" href="Uitjes?section=Educatie">Educatie</a></li>
-                    <li><a className="hoverLink" href="Uitjes?section=Workshops">Workshops</a></li>
+                    <li><a className="hoverLink" href="#"><h3>tbt</h3></a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
                 </ul>
                 <ul>
-                    <li><a className="hoverLink" href="Contact"><h3>Contact</h3></a></li>
-                    <li><a className="hoverLink" href="Contact?section=Vacatures">Vacatures</a></li>
-                    <li><a className="hoverLink" href="Contact?section=PartnerWorden">Partner worden</a></li>
-                    <li><a className="hoverLink" href="Contact?section=Pers">Pers</a></li>
-                </ul>
-                <ul>
-                    <li><a className="hoverLink" href="Faq"><h3>Faq</h3></a></li>
-                    <li><a className="hoverLink" href="Tickets"><h3>Tickets</h3></a></li>
+                    <li><a className="hoverLink" href="#"><h3>tbt</h3></a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
+                    <li><a className="hoverLink" href="#">tbt</a></li>
                 </ul>
             </nav>
 
@@ -40,18 +36,28 @@ const Footer: React.FC = () =>
                 </ul>
                 <ul>
                     <li className="Line"></li>
-                    <li><h3>Neem contact op</h3></li>
-                    <li><p>Telefoonnummer: <br /> 727-425-2760 <br /> Email: <br /> info@nxtmuseum.com</p></li>
+                    <li><h3>Contact us</h3></li>
+                    <li><p>Phonenumber: <br /> 727-425-2760 <br /> Email: <br /> info@nxtmuseum.com</p></li>
                 </ul>
                 <ul>
                     <li className="Line"></li>
-                    <li><h3>Volg Nxt</h3></li>
+                    <li><h3>Follow Nxt</h3></li>
                     <li><a href="https://www.instagram.com/nxtmuseum/" target="_blank">Instagram</a></li>
                     <li><a href="https://www.youtube.com/channel/UC1Afhs22rJqLfblV4GOpFTA" target="_blank">Youtube</a></li>
                     <li><a href="https://www.tiktok.com/@nxtmuseum?" target="_blank">TikTok</a></li>
                     <li><a href="https://twitter.com/nxtmuseum" target="_blank">Twitter</a></li>
                 </ul>
             </div>
+
+            <ul>
+                <li>Monday: gesloten</li>
+                <li>Tuesday: 10:30 - 20:30</li>
+                <li>Wednesday: 11:00 - 21:30</li>
+                <li>Thursday: 10:30 - 22:30</li>
+                <li>Friday: gesloten</li>
+                <li>Saturday: 10:30 - 20:30</li>
+                <li>Sunday: 10:30 - 22:30</li>
+            </ul>
         </footer>
     );
 };
