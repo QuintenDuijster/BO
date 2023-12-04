@@ -34,16 +34,16 @@ const Header: React.FC = () =>
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li className="dropdown">
                         <span><a href="NL/OverOns">Over ons</a></span>
-                        <ul>
+                        <ul className="dropdown-content">
                             <li><a href="NL/OverOns">Informatie over het next museum</a></li>
                             <li><a href="NL/OverOns">Het team</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="dropDown">
                         <span><a href="NL/BezoekersInformatie">Bezoekers informatie</a></span>
-                        <ul>
+                        <ul className="dropDown-content">
                             <li><a href="NL/BezoekersInformatie">Openingstijden</a></li>
                             <li><a href="NL/BezoekersInformatie">Roete beschrijving</a></li>
                             <li><a href="NL/BezoekersInformatie">Groepsbezoek</a></li>
@@ -52,40 +52,40 @@ const Header: React.FC = () =>
                             <li><a href="NL/BezoekersInformatie">Bezoekers voorwaarden</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="dropDown">
                         <span><a href="NL/Contact">Contact</a></span>
-                        <ul>
+                        <ul className="dropdown-content">
                             <li><a href="NL/Contact">Plan een evenement</a></li>
                             <li><a href="NL/Contact">Werk met ons samen</a></li>
                             <li><a href="NL/Contact">Creatieve samenwerking</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="dropDown">
                         <span><a href="NL/EducatieEnWorkshops">Educatie en workshops</a></span>
-                        <ul>
+                        <ul className="dropdown-content">
                             <li><a href="NL/EducatieEnWorkshops">Onderwijs</a></li>
                             <li><a href="NL/EducatieEnWorkshops">Workshops</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="dropDown">
                         <span><a href="NL/WatIsLive">Wat is live</a></span>
-                        <ul>
+                        <ul className="dropdown-content">
                             <li><a href="NL/WatIsLive">Nxt blog</a></li>
                             <li><a href="NL/WatIsLive">Evenementen tentoonstellingen</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="dropDown">
                         <span><a href="NL/WatIsLive">Faq</a></span>
-                        <ul>
+                        <ul className="dropdown-content">
                             <li><a href="NL/WatIsLive">Faq</a></li>
                             <li><a href="NL/WatIsLive">From</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul>
-                    <li>
+                    <li className="dropDown">
                         <span><a href="NL/Kaartjes">Kaartjes</a></span>
-                        <ul>
+                        <ul className="dropdown-content">
                             <li><a href="NL/Kaartjes">Kaartjes</a></li>
                             <li><a href="NL/Kaartjes">Ticket ondersteuning</a></li>
                         </ul>
