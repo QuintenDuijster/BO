@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../Reusable/pageStyle.css';
+import '../../Reusable/hoverLink.css';
 import './CSS/Header.css';
 
 const Header: React.FC = () => 
@@ -9,7 +10,7 @@ const Header: React.FC = () =>
             <nav>
                 <ul className="Left">
                     <li>
-                        <a className="Logo" href="http://localhost:5173/">
+                        <a className="Logo" href="http://localhost:5173/NL">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 80 80"
@@ -25,70 +26,53 @@ const Header: React.FC = () =>
                         </a>
                     </li>
                     <li className="dropdown">
-                        <span><a href="OverNxt">Over Nxt</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="NL/OverNxt?section=OnsTeam">Ons team</a></li>
-                                <li><a className="hoverLink" href="NL/OverNxt?section=EtenenDrinken">Eten en Drinken</a></li>
-                                <li><a className="hoverLink" href="NL/OverNxt?section=OnzeHuisregels">Onze huisregels</a></li>
-                            </ul>
-                        </div>
+                        <span><a href="/NL/BezoekersInformatie">Bezoekers informatie</a></span>
+                        <ul className="dropdown-content">
+                            <li><a href="/NL/BezoekersInformatie">Openingstijden</a></li>
+                            <li><a href="/NL/BezoekersInformatie">Roete beschrijving</a></li>
+                            <li><a href="/NL/BezoekersInformatie">Groepsbezoek</a></li>
+                            <li><a href="/NL/BezoekersInformatie">Prive museumervaring</a></li>
+                            <li><a href="/NL/BezoekersInformatie">Begleide tour</a></li>
+                            <li><a href="/NL/BezoekersInformatie">Bezoekers voorwaarden</a></li>
+                        </ul>
                     </li>
                     <li className="dropdown">
-                        <span><a href="NL/OverOns">Over ons</a></span>
+                        <span><a href="/NL/Contact">Contact</a></span>
                         <ul className="dropdown-content">
-                            <li><a href="NL/OverOns">Informatie over het next museum</a></li>
-                            <li><a href="NL/OverOns">Het team</a></li>
+                            <li><a href="/NL/Contact">Plan een evenement</a></li>
+                            <li><a href="/NL/Contact">Werk met ons samen</a></li>
+                            <li><a href="/NL/Contact">Creatieve samenwerking</a></li>
                         </ul>
                     </li>
-                    <li className="dropDown">
-                        <span><a href="NL/BezoekersInformatie">Bezoekers informatie</a></span>
-                        <ul className="dropDown-content">
-                            <li><a href="NL/BezoekersInformatie">Openingstijden</a></li>
-                            <li><a href="NL/BezoekersInformatie">Roete beschrijving</a></li>
-                            <li><a href="NL/BezoekersInformatie">Groepsbezoek</a></li>
-                            <li><a href="NL/BezoekersInformatie">Prive museumervaring</a></li>
-                            <li><a href="NL/BezoekersInformatie">Begleide tour</a></li>
-                            <li><a href="NL/BezoekersInformatie">Bezoekers voorwaarden</a></li>
+                    <li className="dropdown">
+                        <span><a href="/lNL/EducatieEnWorkshops">Educatie en workshops</a></span>
+                        <ul className="dropdown-content">
+                            <li><a href="/NL/EducatieEnWorkshops">Onderwijs</a></li>
+                            <li><a href="/NL/EducatieEnWorkshops">Workshops</a></li>
                         </ul>
                     </li>
-                    <li className="dropDown">
-                        <span><a href="NL/Contact">Contact</a></span>
+                    <li className="dropdown">
+                        <span><a href="/NL/WatIsLive">Wat is live</a></span>
                         <ul className="dropdown-content">
-                            <li><a href="NL/Contact">Plan een evenement</a></li>
-                            <li><a href="NL/Contact">Werk met ons samen</a></li>
-                            <li><a href="NL/Contact">Creatieve samenwerking</a></li>
+                            <li><a href="/NL/WatIsLive">Nxt blog</a></li>
+                            <li><a href="/NL/WatIsLive">Tentoonstellingen</a></li>
+                            <li><a href="/NL/WatIsLive">Evenementen</a></li>
                         </ul>
                     </li>
-                    <li className="dropDown">
-                        <span><a href="NL/EducatieEnWorkshops">Educatie en workshops</a></span>
+                    <li className="dropdown">
+                        <span><a href="/NL/WatIsLive">Faq</a></span>
                         <ul className="dropdown-content">
-                            <li><a href="NL/EducatieEnWorkshops">Onderwijs</a></li>
-                            <li><a href="NL/EducatieEnWorkshops">Workshops</a></li>
-                        </ul>
-                    </li>
-                    <li className="dropDown">
-                        <span><a href="NL/WatIsLive">Wat is live</a></span>
-                        <ul className="dropdown-content">
-                            <li><a href="NL/WatIsLive">Nxt blog</a></li>
-                            <li><a href="NL/WatIsLive">Evenementen tentoonstellingen</a></li>
-                        </ul>
-                    </li>
-                    <li className="dropDown">
-                        <span><a href="NL/WatIsLive">Faq</a></span>
-                        <ul className="dropdown-content">
-                            <li><a href="NL/WatIsLive">Faq</a></li>
-                            <li><a href="NL/WatIsLive">From</a></li>
+                            <li><a href="/NL/WatIsLive">Faq</a></li>
+                            <li><a href="/NL/WatIsLive">Form</a></li>
                         </ul>
                     </li>
                 </ul>
-                <ul>
-                    <li className="dropDown">
-                        <span><a href="NL/Kaartjes">Kaartjes</a></span>
-                        <ul className="dropdown-content">
-                            <li><a href="NL/Kaartjes">Kaartjes</a></li>
-                            <li><a href="NL/Kaartjes">Ticket ondersteuning</a></li>
-                        </ul>
+                <ul className="Right">
+                    <li>
+                        <a href="/NL/Kaartjes">NL | ENG</a>
+                    </li>
+                    <li>
+                        <a href="/NL/Kaartjes">Kaartjes</a>
                     </li>
                 </ul>
             </nav>

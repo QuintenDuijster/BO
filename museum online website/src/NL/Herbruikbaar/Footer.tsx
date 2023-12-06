@@ -26,10 +26,6 @@ const Footer: React.FC = () =>
                     <li><a className="hoverLink" href="Contact?section=PartnerWorden">Partner worden</a></li>
                     <li><a className="hoverLink" href="Contact?section=Pers">Pers</a></li>
                 </ul>
-                <ul>
-                    <li><a className="hoverLink" href="Faq"><h3>Faq</h3></a></li>
-                    <li><a className="hoverLink" href="Tickets"><h3>Tickets</h3></a></li>
-                </ul>
             </nav>
 
             <div className="information">
@@ -52,6 +48,17 @@ const Footer: React.FC = () =>
                     <li><a href="https://twitter.com/nxtmuseum" target="_blank">Twitter</a></li>
                 </ul>
             </div>
+
+            <ul>
+                <li><h3>Openingtijden</h3></li>
+                <li>Maandag: dicht</li>
+                <li>Dinsdag: 10:30 - 20:30</li>
+                <li>Woensdag: 11:00 - 21:30</li>
+                <li>Donderdag: 10:30 - 22:30</li>
+                <li>Vrijdag: dicht</li>
+                <li>Zaterdag: 10:30 - 20:30</li>
+                <li>Zondag: 10:30 - 22:30</li>
+            </ul>
         </footer>
     );
 };

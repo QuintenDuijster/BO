@@ -5,11 +5,11 @@ import './CSS/Header.css';
 const Header: React.FC = () => 
 {
     return (
-        <header> {/* dit is de header voor de website! */}
+        <header>
             <nav>
                 <ul className="Left">
                     <li>
-                        <a className="Logo" href="http://localhost:5173/">
+                        <a className="Logo" href="http://localhost:5173/NL">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 80 80"
@@ -25,45 +25,53 @@ const Header: React.FC = () =>
                         </a>
                     </li>
                     <li className="dropdown">
-                        <span><a href="OverNxt">Over Nxt</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="OverNxt?section=OnsTeam">Ons team</a></li>
-                                <li><a className="hoverLink" href="OverNxt?section=EtenenDrinken">Eten en Drinken</a></li>
-                                <li><a className="hoverLink" href="OverNxt?section=OnzeHuisregels">Onze huisregels</a></li>
-                            </ul>
-                        </div>
+                        <span><a href="VisitorInformation">Visitor information</a></span>
+                        <ul className="dropdown-content">
+                            <li><a href="/VisitorInformation">Opening hours</a></li>
+                            <li><a href="/VisitorInformation">Directions</a></li>
+                            <li><a href="/VisitorInformation">Group visit</a></li>
+                            <li><a href="/VisitorInformation">Private Museum Experience</a></li>
+                            <li><a href="/VisitorInformation">Guided Tours</a></li>
+                            <li><a href="/VisitorInformation">visitor terms</a></li>
+                        </ul>
                     </li>
                     <li className="dropdown">
-                        <span><a href="Uitjes">Uitjes</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="Uitjes?section=Bedrijfsuitjes">Bedrijfsuitje</a></li>
-                                <li><a className="hoverLink" href="Uitjes?section=Educatie">Educatie</a></li>
-                                <li><a className="hoverLink" href="Uitjes?section=Workshops">Workshops</a></li>
-                            </ul>
-                        </div>
+                        <span><a href="/Contact">Contact</a></span>
+                        <ul className="dropdown-content">
+                            <li><a href="/Contact">Plan an event</a></li>
+                            <li><a href="/Contact">Work with us</a></li>
+                            <li><a href="/Contact">Creative collaboration</a></li>
+                        </ul>
                     </li>
                     <li className="dropdown">
-                        <span><a href="Contact">Contact</a></span>
-                        <div className="dropdown-content">
-                            <ul>
-                                <li><a className="hoverLink" href="Contact?section=Vacatures">Vacatures</a></li>
-                                <li><a className="hoverLink" href="Contact?section=PartnerWorden">Partner worden</a></li>
-                                <li><a className="hoverLink" href="Contact?section=Pers">Pers</a></li>
-                            </ul>
-                        </div>
+                        <span><a href="/lNL/EducatieEnWorkshops">Education and Workshops</a></span>
+                        <ul className="dropdown-content">
+                            <li><a href="/NL/EducatieEnWorkshops">Education</a></li>
+                            <li><a href="/NL/EducatieEnWorkshops">Workshops</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a className="hoverLink" href="Faq">Faq</a>
+                    <li className="dropdown">
+                        <span><a href="/NL/WatIsLive">What is live</a></span>
+                        <ul className="dropdown-content">
+                            <li><a href="/NL/WatIsLive">Nxt blog</a></li>
+                            <li><a href="/NL/WatIsLive">exhibitions</a></li>
+                            <li><a href="/NL/WatIsLive">Events</a></li>
+                        </ul>
+                    </li>
+                    <li className="dropdown">
+                        <span><a href="/NL/WatIsLive">Faq</a></span>
+                        <ul className="dropdown-content">
+                            <li><a href="/NL/WatIsLive">Faq</a></li>
+                            <li><a href="/NL/WatIsLive">Form</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <ul className="Right">
+                <ul>
                     <li>
-                        <a className="hoverLink" href="Tickets">NL | ENG</a>
+                        <a href="/NL/Kaartjes">NL | ENG</a>
                     </li>
                     <li>
-                        <a className="hoverLink" href="Tickets">Tickets</a>
+                        <a href="/NL/Kaartjes">Tickets</a>
                     </li>
                 </ul>
             </nav>
