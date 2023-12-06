@@ -69,6 +69,7 @@ const EducationAndWorkshops: React.FC = () =>
                                 <a href="WorkshopSlowLooking">Slow Looking</a>
                                 The Slow Looking Workshop is an exercise to slow down the ways in which we look at the world around us and how this practice can support deep
                                 learning across subject matters.
+                                </p>
                         </li>
                         <li>
                             <p>

@@ -17,7 +17,7 @@ import Faq from './EN/Faq';
 import HoofdPagina from './NL/HoofdPagina';
 import OverOns from './NL/OverOns';
 import NlContact from './NL/Contact';
-import OpleidingenEnWorkshops from './NL/OpleidingenEnWorkshops';
+import OpleidingenEnWorkshops from './NL/SchoolEnWorkshops';
 import BezoekersInformatie from './NL/BezoekersInformatie';
 import WatIsLive from './NL/WatIsLive';
 import Kaartjes from './NL/Kaartjes';
