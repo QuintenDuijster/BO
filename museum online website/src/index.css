@@ -1,13 +1,22 @@
 :root {
-    background-color: black;
     scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: black;
+    font-size: 20px;
 }
 
 :root::-webkit-scrollbar {
     display: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
+h1,h2,h3,h4,p{
+    color: white;
+}
 
 
 

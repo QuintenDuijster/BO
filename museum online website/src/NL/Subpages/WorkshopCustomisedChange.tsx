@@ -1,8 +1,10 @@
 import React from 'react';
-import Header from '../Reusable/Header.tsx';
-import Footer from '../Reusable/Footer.tsx';
+import Header from '../Herbruikbaar/Header.tsx';
+import Footer from '../Herbruikbaar/Footer.tsx';
 
-const WorkshopToekomstverkenning: React.FC = () => {
+
+
+const WorkshopCustomisedChange: React.FC = () => {
     return (
         <div className="Workshop">
 
@@ -10,7 +12,12 @@ const WorkshopToekomstverkenning: React.FC = () => {
             <main>
                 <div className="Info">
                     <h1>Customised Change</h1>
-                    <p></p>
+                    <p>Soms moet er iets gebeuren. Om de energie erin te krijgen, weer geïnspireerd te raken of tot actie over te gaan.
+                        Wij vertrouwen hierbij op de kracht van kunst. Het doorbreekt je dagelijks denken en dat geeft ruimte voor nieuwe perspectieven.
+                        En wij stellen rake vragen. Het doel? Een nieuwe mindset voor duurzame verandering.
+
+                        Hedendaagse kunst schetst een beeld van de toekomst of bevraagt het heden. Het nodigt uit tot reflectie.
+                        Dat is zeker. Wij vinden de tentoonstelling die aansluit bij de vragen van jouw organisatie. En gaan voor een onderscheidend verandertraject.</p>
                     <div className="VerwachtingWorkshop">
                         <h2>Wat te verwachten?</h2>
                         <ul>
@@ -40,27 +47,26 @@ const WorkshopToekomstverkenning: React.FC = () => {
                         </ul>
                     </div>
                     <div className="Kosten">
-                        <h2>Costs:</h2>
+                        <h2>Kosten: (inclusief museumbezoek)</h2>
                         <ul>
                             <li>
-                                Elementary schools & Highschools:  130€ + 25€/per person
+                                Basisscholen en middelbare scholen: €175 + €40 per persoon
                             </li>
                             <li>
-                                Students: 130€ + 28€/per person
+                                Studenten: €175 + €43/per persoon
                             </li>
                             <li>
-                                Companies: 130€ + 39,75€/per person
+                                Bedrijven: €200 + €50/per persoon
                             </li>
                         </ul>
                     </div>
                 </div>
                 //Form voor het aanmelden van workshop
             </main>
-
             <Footer />
 
         </div>
     );
 };
 
-export default WorkshopToekomstverkenning;
+export default WorkshopCustomisedChange;
