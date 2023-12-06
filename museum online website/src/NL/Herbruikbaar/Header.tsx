@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../Reusable/pageStyle.css';
-import '../../Reusable/hoverLink.css';
-import './CSS/Header.css';
+import './CSS/HeaderNL.css';
 
 const Header: React.FC = () => 
 {
