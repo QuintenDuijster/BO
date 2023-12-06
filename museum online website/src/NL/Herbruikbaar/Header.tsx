@@ -69,7 +69,7 @@ const Header: React.FC = () =>
                 </ul>
                 <ul className="Right">
                     <li>
-                        <a href="/NL/Kaartjes">NL | ENG</a>
+                        <a href="#">NL | ENG</a>
                     </li>
                     <li>
                         <a href="/NL/Kaartjes">Kaartjes</a>
