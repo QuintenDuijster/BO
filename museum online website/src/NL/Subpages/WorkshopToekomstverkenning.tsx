@@ -5,10 +5,10 @@ import Footer from '../Herbruikbaar/Footer.tsx';
 
 const WorkshopToekomstverkenning: React.FC = () => {
     return (
-        <div className="Workshop">
+        <>
 
             <Header />
-            <main>
+            <main className="Workshop">
                 <div className="Info">
                     <h1>Customised Change</h1>
                     <p>Duik op een speelse manier in de toekomst. Laat je, met kunst als katalysator, verbazen en inspireren door haar eindeloze mogelijkheden.
@@ -63,8 +63,7 @@ const WorkshopToekomstverkenning: React.FC = () => {
             </main>
 
             <Footer />
-
-        </div>
+        </>
     );
 };
 

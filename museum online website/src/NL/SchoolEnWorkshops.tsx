@@ -17,7 +17,7 @@ const OpleidingenEnWorkshops: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="SchoolEnWorkshops">
                 <h1>Dagje weg?</h1>
 
                 <p>

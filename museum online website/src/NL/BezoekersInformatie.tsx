@@ -17,7 +17,7 @@ const BezoekersInformatie: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="BezoekersInformatie">
                 <article>
                     <h2>To eat & drink</h2>
                     <p>Café Restaurant Metro is dagelijks geopend voor ontbijt en lunch en van woensdag t/m zondag voor dineren en drankjes.</p>

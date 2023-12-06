@@ -19,7 +19,7 @@ const VisitorInformation: React.FC = () =>
             <Header />
 
 
-            <main>
+            <main className="VisitorInformation">
                 <article>
                     <h2>To eat & drink</h2>
                     <p>Café Restaurant Metro is open daily for breakfast and lunch and for drinks and dinner on Wednesday - Sunday.</p>

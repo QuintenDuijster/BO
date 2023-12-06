@@ -20,8 +20,8 @@ const Contact: React.FC = () =>
         <>
             <Header />
 
-            <main>
-                <div className="Contact">
+            <main className="Contact">
+                <div>
                     <h1>Contactinformatie</h1>
                     <p>Op deze pagina vindt u informatie over <button>partnerships</button>, <button>events</button> en <button>creative collaberation</button></p>
                 </div>

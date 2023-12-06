@@ -20,7 +20,7 @@ const Contact: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="Contact">
                 <div className="Contact">
                     <h1>Contactinformation</h1>
                     <p>On this page you can find information about <button>partnerships</button>, <button>events</button> and <button>creative collaberation</button></p>

@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../Reusable/pageStyle.css';
-import './CSS/HeaderEN.css';
+import './CSS/Header.css';
 
 const Header: React.FC = () => 
 {
     return (
-        <header>
+        <header className="HeaderENG">
             <nav>
                 <ul className="Left">
                     <li>

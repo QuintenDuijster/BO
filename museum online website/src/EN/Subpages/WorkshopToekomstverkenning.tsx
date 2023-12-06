@@ -4,10 +4,10 @@ import Footer from '../Reusable/Footer.tsx';
 
 const WorkshopToekomstverkenning: React.FC = () => {
     return (
-        <div className="Workshop">
+        <>
 
             <Header />
-            <main>
+            <main className="WorkshopToekomstverkenning">
                 <div className="Info">
                     <h1>Customised Change</h1>
                     <p></p>
@@ -59,7 +59,7 @@ const WorkshopToekomstverkenning: React.FC = () => {
 
             <Footer />
 
-        </div>
+        </>
     );
 };
 

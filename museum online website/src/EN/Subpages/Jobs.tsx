@@ -18,7 +18,7 @@ const Jobs: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="Jobs">
                 <h1>Jobs</h1>
                 <p>
                     Driven by a passion and curiosity for discovering what’s next, we are united by our love of art and technologies. We’re thrilled by what’s to come and we’re building a team to explore just that. 

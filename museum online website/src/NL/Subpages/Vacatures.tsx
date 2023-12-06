@@ -18,7 +18,7 @@ const Vactures: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="Vactures">
                 <h1>Vacatures</h1>
                 <p>
                     Whatever

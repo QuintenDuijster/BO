@@ -17,14 +17,14 @@ const EducationAndWorkshops: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="EducationAndWorkshops">
                 <h1>Dagje weg?</h1>
 
                 <p>
                     We put all your options on this page here. There's a fun experience for everyone!
                 </p>
 
-                <div className="Groepsbezoek" id="Bedrijfsuitjes">
+                <div className="Groepsbezoek">
 
                     <h1>Group booking</h1>
 
@@ -38,7 +38,7 @@ const EducationAndWorkshops: React.FC = () =>
                     </p>
                 </div>
 
-                <div className="Educatie" id="Educatie">
+                <div className="Educatie">
 
                     <h1>Excursies voor scholen</h1>
 
@@ -53,7 +53,7 @@ const EducationAndWorkshops: React.FC = () =>
                     </p>
                 </div>
 
-                <div className="Workshops" id="Workshops">
+                <div className="Workshops">
 
                     <h1> Workshops </h1>
 
@@ -69,6 +69,7 @@ const EducationAndWorkshops: React.FC = () =>
                                 <a href="WorkshopSlowLooking">Slow Looking</a>
                                 The Slow Looking Workshop is an exercise to slow down the ways in which we look at the world around us and how this practice can support deep
                                 learning across subject matters.
+                            </p>
                         </li>
                         <li>
                             <p>

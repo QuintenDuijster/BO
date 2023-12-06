@@ -18,7 +18,7 @@ const OurTeam: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="OurTeam">
                 <h1>Ons team</h1>
 
                 <table>

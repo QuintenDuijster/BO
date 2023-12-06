@@ -18,7 +18,7 @@ const OnsTeam: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="OnsTeam">
                 <h1>Ons team</h1>
 
                 <table>

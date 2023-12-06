@@ -4,9 +4,9 @@ import Footer from '../Reusable/Footer.tsx';
 
 const WorkshopFilterCreation: React.FC = () => {
     return (
-        <div className="FilterCreation">
+        <>
             <Header />
-            <main>
+            <main className="WorkshopFilterCreation">
                 <div className="Info">
                     <h1>Filter creation</h1>
                     <p></p>
@@ -77,7 +77,7 @@ const WorkshopFilterCreation: React.FC = () => {
                 //Form voor het aanmelden van workshop
             </main>
             <Footer />
-        </div>
+        </>
     );
 };
 

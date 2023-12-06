@@ -18,7 +18,7 @@ const WhatsLive: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="WhatIsLive">
 
             </main>
 

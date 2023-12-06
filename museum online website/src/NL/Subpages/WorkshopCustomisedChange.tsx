@@ -6,10 +6,10 @@ import Footer from '../Herbruikbaar/Footer.tsx';
 
 const WorkshopCustomisedChange: React.FC = () => {
     return (
-        <div className="Workshop">
-
+        <>
             <Header />
-            <main>
+
+            <main className="WorkshopCustomisedChange">
                 <div className="Info">
                     <h1>Customised Change</h1>
                     <p>Soms moet er iets gebeuren. Om de energie erin te krijgen, weer geïnspireerd te raken of tot actie over te gaan.
@@ -63,9 +63,9 @@ const WorkshopCustomisedChange: React.FC = () => {
                 </div>
                 //Form voor het aanmelden van workshop
             </main>
-            <Footer />
 
-        </div>
+            <Footer />
+        </>
     );
 };
 

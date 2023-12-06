@@ -5,7 +5,6 @@ import './index.css'
 
 //ENG
 import MainPage from './EN/MainPage';
-import AboutUs from './EN/AboutUs';
 import EngContact from './EN/Contact';
 import EducationAndWorkshops from './EN/EducationAndWorkshops';
 import VisitorInformation from './EN/VisitorInformation';
@@ -15,9 +14,8 @@ import Faq from './EN/Faq';
 
 //NL
 import HoofdPagina from './NL/HoofdPagina';
-import OverOns from './NL/OverOns';
 import NlContact from './NL/Contact';
-import OpleidingenEnWorkshops from './NL/OpleidingenEnWorkshops';
+import OpleidingenEnWorkshops from './NL/SchoolEnWorkshops.tsx';
 import BezoekersInformatie from './NL/BezoekersInformatie';
 import WatIsLive from './NL/WatIsLive';
 import Kaartjes from './NL/Kaartjes';
@@ -28,7 +26,6 @@ export default function Router() {
             <Routes>
                 {/*ENG*/}
                 <Route index element={<MainPage />} />
-                <Route path="AboutUS" element={<AboutUs />} />
                 <Route path="Contact" element={<EngContact />} />
                 <Route path="EducationAndWorkshops" element={<EducationAndWorkshops />} />
                 <Route path="VisitorInformation" element={<VisitorInformation />} />
@@ -38,7 +35,6 @@ export default function Router() {
 
                 {/*NL*/}
                 <Route path="NL" element={<HoofdPagina />} />
-                <Route path="NL/OverOns" element={<OverOns />} />
                 <Route path="NL/NlContact" element={<NlContact />} />
                 <Route path="NL/OpleidingenEnWorkshops" element={<OpleidingenEnWorkshops />} />
                 <Route path="NL/BezoekersInformatie" element={<BezoekersInformatie />} />

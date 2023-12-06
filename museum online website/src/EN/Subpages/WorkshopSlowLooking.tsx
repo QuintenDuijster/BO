@@ -5,10 +5,10 @@ import Footer from '../Reusable/Footer.tsx';
 
 const WorkshopSlowLooking: React.FC = () => {
     return (
-        <div className="Workshop">
+        <>
 
             <Header />
-            <main>
+            <main className="WorkshopSlowLooking">
                 <div className="Info">
                     <h1>Slow Looking</h1>
                     <p>
@@ -83,7 +83,7 @@ const WorkshopSlowLooking: React.FC = () => {
                //Form voor het aanmelden van workshop
                 <Footer />
             </main>
-        </div>
+        </>
     );
 };
 

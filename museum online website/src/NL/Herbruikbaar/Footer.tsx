@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../Reusable/pageStyle.css';
-import './CSS/FooterNL.css';
+import './CSS/Footer.css';
 
 
 const Footer: React.FC = () => 
 {
     return (
-        <footer>
+        <footer className="FooterNL">
             <nav>
                 <ul>
                     <li><a className="hoverLink" href="OverNxt"><h3>OverNxt</h3></a></li>

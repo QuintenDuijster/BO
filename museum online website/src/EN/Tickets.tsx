@@ -18,7 +18,7 @@ const Tickets: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="Tickets">
 
             </main>
 
