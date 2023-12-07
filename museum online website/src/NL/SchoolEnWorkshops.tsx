@@ -47,7 +47,7 @@ const OpleidingenEnWorkshops: React.FC = () =>
                         Ook voor scholen hebben we onze tentoonstellingen beschikbaar gesteld.
                         Nxt is jouw venster naar de toekomst, waar je kunt zien hoe ideeën en innovaties de wereld vormgeven.
                         Duik in de interactieve en inspirerende presentaties, bekijk onze <a href="./OverNxt" title="Over onze tentoonstellingen">tentoonstellingen</a> en laat je meeslepen.
-
+                    
                         <a href="./Tickets" title="Hbo, mbo en universiteit">Groepsbezoek</a> voor mbo-, hbo- en universitaire studenten                           Of kom je op bezoek met een schoolklas? Boek
                         <a href="./Tickets" title="Basis- en middelbarescholen"> hier </a> je groepsboekingen van scholieren in het basis- en voortgezet onderwijs.
                     </p>

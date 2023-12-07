@@ -36,7 +36,7 @@ export default function Router() {
                 <Route path="Tickets" element={<Tickets />} />
                 <Route path="Faq" element={<Faq />} />
 
-                {/*NL*/}
+                {/*NL  damn dat kan ik ook wel zien ._.*/}
                 <Route path="NL" element={<HoofdPagina />} />
                 <Route path="NL/OverOns" element={<OverOns />} />
                 <Route path="NL/NlContact" element={<NlContact />} />
