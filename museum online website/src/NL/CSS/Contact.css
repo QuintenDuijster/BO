@@ -1,0 +1,11 @@
+.main {
+
+    display: flex;
+}
+
+    .main > div {
+        background-color: purple;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
