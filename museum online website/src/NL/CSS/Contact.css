@@ -1,11 +1,20 @@
-.main {
-
+main {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 20px
 }
 
-    .main > div {
+    main > div {
         background-color: purple;
         margin: 10px;
         padding: 20px;
         font-size: 30px;
+        width: 60vw;
+    }
+
+    .Partnerships {
+        place-content:center;
+
+        width: 40vw;
     }
