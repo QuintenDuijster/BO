@@ -1,22 +1,45 @@
-:root {
+* {
     scrollbar-width: none;
     -ms-overflow-style: none;
     background-color: black;
     font-size: 20px;
+    list-style: none;
 }
 
 :root::-webkit-scrollbar {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-h1,h2,h3,h4,p{
+h1, h2, h3, h4, p {
     color: white;
 }
 
+header{
+    width: 100vw;
+    border-bottom: 4px solid white;
+}
+
+footer {
+    width: 100vw;
+    border-top: 4px solid white;
+}
+
+header, header nav, header nav ul, .Logo{
+    display: flex;
+}
+
+.dropdown-content{
+    background-color: black;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 

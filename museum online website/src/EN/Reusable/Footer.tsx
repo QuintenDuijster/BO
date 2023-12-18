@@ -6,7 +6,7 @@ import './CSS/Footer.css';
 const Footer: React.FC = () => 
 {
     return (
-        <footer>
+        <footer className="FooterENG">
             <nav>
                 <ul>
                     <li><a className="hoverLink" href="#"><h3>tbt</h3></a></li>

@@ -18,7 +18,7 @@ const PrivacyPolicy: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="PrivacyPolicy">
                 <article>
                     <h1>Privacy policy</h1>
                     <h2>Privacy Statement</h2>

@@ -17,7 +17,7 @@ const Kaartjes: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="Kaartjes">
 
             </main>
 

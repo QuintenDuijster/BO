@@ -18,8 +18,8 @@ const MainPage: React.FC = () =>
         <>
             <Header />
 
-            <main>
-                <div className="main">
+            <main className="MainPage">
+                <div>
                     <article>
                         <h1>Nxt Museum</h1>
                         <p>

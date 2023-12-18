@@ -4,9 +4,9 @@ import Footer from '../Herbruikbaar/Footer.tsx';
 
 const WorkshopFilterCreation: React.FC = () => {
     return (
-        <div className="FilterCreation">
+        <>
             <Header />
-            <main>
+            <main className="FilterCreation">
                 <div className="Info">
                     <h1>Filter creation</h1>
                     <p>Maskers kennen lange tradities in verschillende culturen en een kortere – maar impactvolle – traditie in de digitale wereld.
@@ -84,7 +84,7 @@ const WorkshopFilterCreation: React.FC = () => {
                 //Form voor het aanmelden van workshop
             </main>
             <Footer />
-        </div>
+        </>
     );
 };
 

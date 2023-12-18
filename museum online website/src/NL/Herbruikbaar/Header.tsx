@@ -1,12 +1,11 @@
 import React from 'react';
 import '../../Reusable/pageStyle.css';
-import '../../Reusable/hoverLink.css';
 import './CSS/Header.css';
 
 const Header: React.FC = () => 
 {
     return (
-        <header>
+        <header className="HeaderNL">
             <nav>
                 <ul className="Left">
                     <li>
@@ -69,7 +68,7 @@ const Header: React.FC = () =>
                 </ul>
                 <ul className="Right">
                     <li>
-                        <a href="/NL/Kaartjes">NL | ENG</a>
+                        <a href="#">NL | ENG</a>
                     </li>
                     <li>
                         <a href="/NL/Kaartjes">Kaartjes</a>

@@ -17,7 +17,7 @@ const HooftPagina: React.FC = () =>
         <>
             <Header />
 
-            <main>
+            <main className="HooftPagina">
                 <div className="main">
                     <article>
                         <h1>Nxt Museum</h1>

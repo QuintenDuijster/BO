@@ -6,10 +6,10 @@ import Footer from '../Reusable/Footer.tsx';
 
 const WorkshopCustomisedChange: React.FC = () => {
     return (
-        <div className="Workshop">
+        <>
 
             <Header />
-            <main>
+            <main className="WorkshopCustomisedChange">
                 <div className="Info">
                     <h1>Customised Change</h1>
                     <p>Led by AIM AT ART’s consultants, teams are stimulated to reflect and align on the questions facing your organisation, and aim for a distinctive change process.</p>
@@ -60,7 +60,7 @@ const WorkshopCustomisedChange: React.FC = () => {
             </main>
             <Footer />
 
-        </div>
+        </>
     );
 };
 
