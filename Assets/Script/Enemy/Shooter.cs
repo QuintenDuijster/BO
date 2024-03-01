@@ -61,6 +61,7 @@ public class Shooter : MonoBehaviour
                 // play shooting animation
                 bullet.transform.position = transform.position;
                 bullet.transform.rotation = transform.rotation;
+                bullet.transform.position += transform.forward;
                 Instantiate(bullet);
                 bulletAmount--;
                 AttackCooldown = Random.Range(minAttackCooldown, maxAttackCooldown);
