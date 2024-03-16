@@ -30,11 +30,27 @@ public class Shooter : MonoBehaviour
 
     void Update()
     {
+        #region Movement
         var step = speed * Time.deltaTime;
 
         targetPosition = new Vector3(target.transform.position.x, 1f, target.transform.position.z);
 
-        if(bulletAmount == 0)
+        if (Vector3.Distance(transform.position, target.transform.position) > maxDistance)
+        {
+            agent.isStopped = false;
+            agent.SetDestination(targetPosition);
+        }
+        else if (Vector3.Distance(transform.position, target.transform.position) < minDistance)
+        {
+            agent.isStopped = true; 
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, -step);
+        }
+        transform.LookAt(targetPosition);
+
+        #endregion
+
+        #region Attack
+        if (bulletAmount == 0)
         {
             maxDistance = 0;
             minDistance = 0;
@@ -42,23 +58,11 @@ public class Shooter : MonoBehaviour
             canShoot = false;
         }
 
-        if (Vector3.Distance(transform.position, target.transform.position) > maxDistance)
-        {
-            // play walking forward animation
-            agent.SetDestination(targetPosition);
-        }
-        else if (Vector3.Distance(transform.position, target.transform.position) < minDistance)
-        {
-            // play walking backwords animation
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, -step);
-        }
-        transform.LookAt(targetPosition);
 
         if (AttackCooldown <= 0)
         {
             if (canShoot && !(Vector3.Distance(transform.position, targetPosition) < hitDistance))
             {
-                // play shooting animation
                 bullet.transform.position = transform.position;
                 bullet.transform.rotation = transform.rotation;
                 bullet.transform.position += transform.forward;
@@ -68,10 +72,12 @@ public class Shooter : MonoBehaviour
             }
             else if (Vector3.Distance(transform.position, targetPosition) < hitDistance)
             {
-                // play hitting animation
                 AttackCooldown = Random.Range(minAttackCooldown, maxAttackCooldown);
             }
         }
         AttackCooldown = AttackCooldown - Time.deltaTime;
+        #endregion
     }
 }
+
+
