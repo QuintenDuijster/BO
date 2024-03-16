@@ -1,58 +1,60 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Controller : MonoBehaviour
 {
-    private float speed = 0f;
-    private float runSpeed = 10f;
-    private float walkSpeed = 5f;
-    private float jumpForce = 500f;
-    private float RotationSpeed = 10f;
-    private Rigidbody rb;
-    private float vertical;
-    private float horizontal;
 
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
+	[SerializeField] private float rotationSpeed = 100f;
+	[SerializeField] private float jumpForce = 5f;
+	[SerializeField] private float runningSpeed = 10f;
+	[SerializeField] private float walkingSpeed = 5f;
+	private float moveSpeed = 0f;
 
-    void Update()
-    {
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+	private Rigidbody rb;
 
-        if (Input.GetKey(KeyCode.LeftShift)) speed = runSpeed;
-        else speed = walkSpeed;
+	private void Start()
+	{
+		rb = GetComponent<Rigidbody>();
+	}
 
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            speed = speed / 2;
-            transform.localScale = new Vector3(1, 0.75f, 1);
-        }
-        else
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
+	private void Update()
+	{
+		RotateWithMouse();
 
-        if ((horizontal < -0.2 || horizontal > 0.2) && (vertical < -0.2 || vertical > 0.2))
-        {
-            speed = speed * 0.5f;
-        }
+		if (Input.GetButtonUp("Jump") && isGrounded())
+		{
+			rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+		}
 
-        transform.Translate(new Vector3(horizontal, 0f, vertical) * speed * Time.deltaTime);
+		bool isGrounded()
+		{
+			return Physics.Raycast(transform.position, -Vector3.up, 3f);
+		}
+	}
 
-        transform.Rotate(0, Input.GetAxis("Mouse X") * RotationSpeed, 0);
+	private void FixedUpdate()
+	{
+		float Horizontal = Input.GetAxis("Horizontal");
+		float Vertical = Input.GetAxis("Vertical");
 
-        if (Input.GetButtonUp("Jump") && isGrounded())
-        {
-            rb.AddForce(new Vector3(rb.velocity.x, jumpForce, rb.velocity.z));
-        }
+		if (Input.GetKey(KeyCode.LeftShift))
+		{
+			moveSpeed = runningSpeed;
+		}
+		else
+		{
+			moveSpeed = walkingSpeed;
+		}
 
-        bool isGrounded()
-        {
-            return Physics.Raycast(transform.position, -Vector3.up, 1.05f);
-        }
-    }
+		Vector3 movement = new Vector3(Horizontal, 0f, Vertical).normalized * moveSpeed;
+		rb.MovePosition(rb.position + transform.TransformDirection(movement) * Time.fixedDeltaTime);
+	}
+
+	private void RotateWithMouse()
+	{
+		float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
+		Quaternion deltaRotation = Quaternion.Euler(Vector3.up * mouseX);
+		rb.MoveRotation(rb.rotation * deltaRotation);
+	}
 }
+
