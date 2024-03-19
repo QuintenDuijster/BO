@@ -8,12 +8,17 @@ public class Controller : MonoBehaviour
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float runningSpeed = 10f;
     [SerializeField] private float walkingSpeed = 5f;
+    [SerializeField] private GameObject gameController;
+    private Points points;
     private float moveSpeed = 0f;
     private Rigidbody rb;
+    private float meterAlreadyTravelt = 0f;
+    private float metersTravelt = 0;
 
-    private void Start()
+	private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        points = gameController.GetComponent<Points>();
     }
 
     private void Update()
@@ -29,7 +34,16 @@ public class Controller : MonoBehaviour
         {
             return Physics.Raycast(transform.position, -Vector3.up, 3f);
         }
-    }
+
+        metersTravelt = map.transform.position.z - meterAlreadyTravelt;
+
+		if (metersTravelt > 0)
+        {
+			points.metersTravelt += map.transform.position.z - meterAlreadyTravelt;
+		}
+
+		meterAlreadyTravelt = map.transform.position.z;
+	}
 
     private void FixedUpdate()
     {
@@ -51,11 +65,11 @@ public class Controller : MonoBehaviour
             moveSpeed = moveSpeed / 2;
         }
 
-        Vector3 playerMovement = new Vector3(Horizontal, 0f, Vertical).normalized * moveSpeed;
+        Vector3 playerMovement = new Vector3(Horizontal, 0f, 0f).normalized * moveSpeed;
         rb.MovePosition(rb.position + transform.TransformDirection(playerMovement) * Time.fixedDeltaTime);
 
-        Vector3 mapMovement = new Vector3(Horizontal, 0f, Vertical).normalized * moveSpeed;
-        map.transform.position -= transform.TransformDirection(mapMovement) * Time.fixedDeltaTime;
+        Vector3 mapMovement = new Vector3(0f, 0f, Vertical).normalized * moveSpeed;
+        map.transform.position += mapMovement * Time.fixedDeltaTime;
     }
 
     private void RotateWithMouse()
