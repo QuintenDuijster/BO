@@ -9,6 +9,9 @@ class RandomWalk : MonoBehaviour
 	[SerializeField] private int step;
 	[SerializeField] private GameObject startObj;
 	[SerializeField] private GameObject spawnPlatform;
+	[SerializeField] private GameObject[] perSetFlowers;
+	[SerializeField] private int minFlowerAmount;
+	[SerializeField] private int maxFlowerAmount;
 	private GameObject[] areas;
 	private int locationX;
 	private int locationZ;
@@ -92,8 +95,14 @@ class RandomWalk : MonoBehaviour
 
 	}
 
-	private void genDoors()
+	private void spawnFlowers(int flowerLevel)
 	{
+		int amount = UnityEngine.Random.Range(minFlowerAmount, maxFlowerAmount);
 
+		for (int i = 0; i < amount; i++)
+		{
+			Vector3 location = new Vector3();
+			GameObject newFlower = Instantiate(perSetFlowers[flowerLevel], location, Quaternion.identity);
+		}
 	}
 }
