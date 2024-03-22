@@ -5,99 +5,55 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Controller : MonoBehaviour
 {
-	[SerializeField] private GameObject map;
+    [SerializeField] private GameObject gameController;
     [SerializeField] private float rotationSpeed = 100f;
-    [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float runningSpeed = 10f;
     [SerializeField] private float walkingSpeed = 5f;
-    [SerializeField] private GameObject gameController;
-
+    [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float jumpGravity = 1f;
     [SerializeField] private float fallGravity = 1f;
     [SerializeField] private float jumpHeight = 1f;
 
+    private Rigidbody rb;
+    private MapGenerator mapGenerator;
+    private float horizontal;
+    private float vertical;
+    private float moveSpeed = 0f;
     private bool jump = false;
     private float gravityScale;
-	private Points points;
-    private float moveSpeed = 0f;
-    private Rigidbody rb;
-    private float meterAlreadyTravelt = 0f;
-    private float metersTravelt = 0;
-    private float Horizontal;
-    private float Vertical;
 
-	public float groundCheckRadius = 0.1f;
+    public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
 
-	private void Start()
+    private void Start()
     {
+        mapGenerator = gameController.GetComponent<MapGenerator>();
+
         rb = GetComponent<Rigidbody>();
-        points = gameController.GetComponent<Points>();
-		Cursor.visible = false;
-		Cursor.lockState = CursorLockMode.Locked;
-	}
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     private void Update()
     {
-        Horizontal = Input.GetAxis("Horizontal");
-        Vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
 
         RotateWithMouse();
+        UpdateMoveSpeed();
+        UpdateJumpAndGravity();
+    }
 
-        if (Input.GetButtonUp("Jump") && isGrounded())
-        {
-            jump = true;
-        }
-        if (rb.velocity.y > 0)
-        {
-            gravityScale = jumpGravity;
-		}
-		else if (rb.velocity.y < 0)
-        {
-			gravityScale = fallGravity;
-		}
-
-		bool isGrounded()
-		{
-			Collider[] colliders = Physics.OverlapSphere(transform.position, groundCheckRadius, groundLayer);
-
-			return colliders.Length > 0 ? true : false;
-		}
-
-		metersTravelt = map.transform.position.z - meterAlreadyTravelt;
-
-
-        if (metersTravelt > 0)
-        {
-			points.metersTravelt += map.transform.position.z - meterAlreadyTravelt;
-		}
-
-
-		meterAlreadyTravelt = map.transform.position.z;
-	}
-
-	private void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            moveSpeed = runningSpeed;
-        }
-        else
-        {
-            moveSpeed = walkingSpeed;
-        }
+        Vector3 movementDirection = transform.rotation * new Vector3(horizontal, 0f, vertical).normalized * moveSpeed;
+        rb.MovePosition(rb.position + new Vector3(movementDirection.x, 0f, 0f) * Time.fixedDeltaTime);
 
-        if (Horizontal != 0 && Vertical != 0)
+        foreach (GameObject section in mapGenerator.loadedSections)
         {
-            moveSpeed = moveSpeed / 2;
+            section.transform.position -= new Vector3(0f, 0f, movementDirection.z) * Time.fixedDeltaTime;
         }
-
-        Vector3 playerMovement = new Vector3(Horizontal, 0f, 0f).normalized * moveSpeed;
-        rb.MovePosition(rb.position + transform.TransformDirection(playerMovement) * Time.fixedDeltaTime);
-
-        Vector3 mapMovement = new Vector3(0f, 0f, Vertical).normalized * moveSpeed;
-        map.transform.position += mapMovement * Time.fixedDeltaTime;
 
         if (jump)
         {
@@ -108,13 +64,50 @@ public class Controller : MonoBehaviour
         }
         rb.AddForce((gravityScale - 1) * Physics.gravity * rb.mass);
     }
-
-
-	private void RotateWithMouse()
+    private void RotateWithMouse()
     {
         float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
         Quaternion deltaRotation = Quaternion.Euler(Vector3.up * mouseX);
         rb.MoveRotation(rb.rotation * deltaRotation);
     }
-}
 
+    private void UpdateMoveSpeed()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            moveSpeed = runningSpeed;
+        }
+        else
+        {
+            moveSpeed = walkingSpeed;
+        }
+
+        if (horizontal != 0 && vertical != 0)
+        {
+            moveSpeed = moveSpeed / 2;
+        }
+    }
+
+    private void UpdateJumpAndGravity()
+    {
+        if (Input.GetButtonUp("Jump") && IsGrounded())
+        {
+            jump = true;
+        }
+
+        if (rb.velocity.y > 0)
+        {
+            gravityScale = jumpGravity;
+        }
+        else if (rb.velocity.y < 0)
+        {
+            gravityScale = fallGravity;
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, groundCheckRadius, groundLayer);
+        return colliders.Length > 0 ? true : false;
+    }
+}

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mapGenerator : MonoBehaviour
+public class MapGenerator : MonoBehaviour
 {
     [SerializeField] private GameObject[] preSetSections;
 	[SerializeField] private GameObject[] perFebBoosters;
@@ -15,8 +15,8 @@ public class mapGenerator : MonoBehaviour
 
 	private int newSectionSpawnLocation;
 	private int zIndex = 0;
-	private int zLocation = 0;
-	private List<GameObject> loadedSections = new List<GameObject>();
+
+	public List<GameObject> loadedSections = new List<GameObject>();
 
     private void Start()
 	{
@@ -30,17 +30,14 @@ public class mapGenerator : MonoBehaviour
             newSection.transform.SetParent(map.transform);
 			loadedSections.Add(newSection);
 		}
-
-		zLocation = -20 * (startPlatformLength - 1);
-        newSectionSpawnLocation = (int)(zIndex + zLocation);
 	}
 
 	private void FixedUpdate()
 	{
-		if (map.transform.position.z >= 20)
+		if (loadedSections[0].transform.position.z >= 180)
 		{
 			int randomSection = UnityEngine.Random.Range(0, preSetSections.Length);
-			Vector3 newPosition = new Vector3(0, 0, newSectionSpawnLocation);
+			Vector3 newPosition = new Vector3(0, 0, loadedSections[startPlatformLength - 1].transform.position.z - 20f);
 			GameObject newSection = Instantiate(preSetSections[randomSection], newPosition, Quaternion.identity);
 			newSection.transform.SetParent(map.transform);
 
@@ -52,13 +49,6 @@ public class mapGenerator : MonoBehaviour
 			Destroy(removedObject);
 
 			loadedSections.Add(newSection);
-
-			for (int i = 0, j = loadedSections.Count; i < j; i++)
-			{
-				loadedSections[i].transform.position = new Vector3(0f, 0f, loadedSections[i].transform.position.z + 20);
-			}
-
-			map.transform.position = new Vector3(0f, 0f, 0f);
 		}
 	}
 
