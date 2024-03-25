@@ -6,6 +6,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField] private GameObject gameController;
+    [SerializeField] private GameObject theWall;
     [SerializeField] private float rotationSpeed = 100f;
     [SerializeField] private float runningSpeed = 10f;
     [SerializeField] private float walkingSpeed = 5f;
@@ -21,6 +22,7 @@ public class Controller : MonoBehaviour
     private float moveSpeed = 0f;
     private bool jump = false;
     private float gravityScale;
+    private float theWallSpeed = 6.5f;
 
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
@@ -49,6 +51,11 @@ public class Controller : MonoBehaviour
     {
         Vector3 movementDirection = transform.rotation * new Vector3(horizontal, 0f, vertical).normalized * moveSpeed;
         rb.MovePosition(rb.position + new Vector3(movementDirection.x, 0f, 0f) * Time.fixedDeltaTime);
+
+        if (theWall.transform.position.z <= 150 || theWallSpeed + movementDirection.z > 0)
+        {
+            theWall.transform.position -= new Vector3(0f, 0f, theWallSpeed + movementDirection.z) * Time.fixedDeltaTime;
+        }
 
         foreach (GameObject section in mapGenerator.loadedSections)
         {

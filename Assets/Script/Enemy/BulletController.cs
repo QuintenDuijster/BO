@@ -6,7 +6,8 @@ public class BulletController : MonoBehaviour
 	private Rigidbody rb;
 	private GameObject player;
 
-	void Start()
+
+    void Start()
 	{
 		rb = GetComponent<Rigidbody>();
 		player = GameObject.FindWithTag("Player");
@@ -15,7 +16,6 @@ public class BulletController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		Debug.Log("speed" + speed);
 		rb.velocity = transform.forward * speed * Time.fixedDeltaTime;
 	}
 

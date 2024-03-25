@@ -106,41 +106,7 @@ class RandomWalk : MonoBehaviour
 
 			Vector3 location = new Vector3(0f, 0f, 0f);
 			GameObject newFlower = Instantiate(perSetFlowers[flowerLevel], location, randomRotation);
-			newFlower.gameObject.transform.position += 
-		}
-	}
-
-
-	private void spawnDoors()
-	{
-
-		foreach(GameObject section in areas)
-		{
-			GameObject door1;
-
-			for (int i = 0; i < areas.Length; i++)
-			{
-				if ()
-				{
-					Vector3 new Location;
-					door1 = door
-				}
-				if ()
-				{
-
-				}
-				if ()
-				{
-
-				}
-				if ()
-				{
-
-				}
-				
-			}
-
-			ìnsta
+			
 		}
 	}
 }
