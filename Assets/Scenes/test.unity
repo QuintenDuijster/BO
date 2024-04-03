@@ -343,6 +343,9 @@ MonoBehaviour:
   step: 0
   startObj: {fileID: 0}
   spawnPlatform: {fileID: 0}
+  perSetFlowers: []
+  minFlowerAmount: 0
+  maxFlowerAmount: 0
 --- !u!4 &1618846837
 Transform:
   m_ObjectHideFlags: 0

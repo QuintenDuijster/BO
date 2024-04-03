@@ -8,7 +8,6 @@ class RandomWalk : MonoBehaviour
 	[SerializeField] private int numSteps;
 	[SerializeField] private int step;
 	[SerializeField] private GameObject startObj;
-	[SerializeField] private GameObject spawnPlatform;
 	[SerializeField] private GameObject[] perSetFlowers;
 	[SerializeField] private int minFlowerAmount;
 	[SerializeField] private int maxFlowerAmount;
@@ -81,7 +80,9 @@ class RandomWalk : MonoBehaviour
 
 
 				previousStepX = locationX;
-				previousStepZ = locationZ; 
+				previousStepZ = locationZ;
+
+				spawnFlowers(newArea, i);
 			}
 			else
 			{
@@ -91,56 +92,37 @@ class RandomWalk : MonoBehaviour
 				i--;
 			}
 		}
-
-
 	}
 
-	private void spawnFlowers(int flowerLevel)
+	private void spawnFlowers(GameObject area, int flowerLevel)
 	{
 		int amount = UnityEngine.Random.Range(minFlowerAmount, maxFlowerAmount);
-
+		Debug.Log(amount);
 		for (int i = 0; i < amount; i++)
 		{
 			Quaternion randomRotation = UnityEngine.Random.rotation;
-			int randomPosition = UnityEngine.Random.Range(0, step / 2);
+			int randomStep = UnityEngine.Random.Range(0, step / 2);
+			Vector3 location = new Vector3(randomStep, 0f, 0f);
 
-			Vector3 location = new Vector3(0f, 0f, 0f);
-			GameObject newFlower = Instantiate(perSetFlowers[flowerLevel], location, randomRotation);
-			newFlower.gameObject.transform.position += 
+			GameObject newFlower = Instantiate(perSetFlowers[0], new Vector3(0f, 0f, 0f), randomRotation);
+			newFlower.transform.position += newFlower.transform.TransformDirection(location);
+			newFlower.transform.parent = area.transform;
 		}
 	}
 
 
-	private void spawnDoors()
-	{
+	//private void spawnDoors()
+	//{
 
-		foreach(GameObject section in areas)
-		{
-			GameObject door1;
+	//	foreach(GameObject section in areas)
+	//	{
+	//		GameObject door1;
 
-			for (int i = 0; i < areas.Length; i++)
-			{
-				if ()
-				{
-					Vector3 new Location;
-					door1 = door
-				}
-				if ()
-				{
+	//		for (int i = 0; i < areas.Length; i++)
+	//		{
 
-				}
-				if ()
-				{
-
-				}
-				if ()
-				{
-
-				}
 				
-			}
-
-			ìnsta
-		}
-	}
+	//		}
+	//	}
+	//}
 }

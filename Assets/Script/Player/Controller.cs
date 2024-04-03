@@ -8,8 +8,8 @@ public class Controller : MonoBehaviour
 	[SerializeField] private GameObject map;
     [SerializeField] private float rotationSpeed = 100f;
     [SerializeField] private float jumpForce = 5f;
-    [SerializeField] private float runningSpeed = 10f;
-    [SerializeField] private float walkingSpeed = 5f;
+    [SerializeField] private float runningSpeed = 100f;
+    [SerializeField] private float walkingSpeed = 50f;
     [SerializeField] private GameObject gameController;
 
     [SerializeField] private float jumpGravity = 1f;
