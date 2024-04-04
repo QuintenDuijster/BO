@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -11,7 +10,7 @@ public class EnemyController : MonoBehaviour
     private float shootCooldown = 0;
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("player");
 	}
 
     void Update()

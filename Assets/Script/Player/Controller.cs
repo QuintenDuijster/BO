@@ -1,5 +1,5 @@
-using Unity.VisualScripting;
-using UnityEditor;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -7,14 +7,17 @@ public class Controller : MonoBehaviour
 {
     [SerializeField] private GameObject gameController;
     [SerializeField] private GameObject theWall;
-    [SerializeField] private float rotationSpeed = 100f;
-    [SerializeField] private float runningSpeed = 10f;
-    [SerializeField] private float walkingSpeed = 5f;
-    [SerializeField] private float jumpForce = 5f;
-    [SerializeField] private float jumpGravity = 1f;
-    [SerializeField] private float fallGravity = 1f;
-    [SerializeField] private float jumpHeight = 1f;
+    [SerializeField] public LayerMask groundLayer;
 
+	private float rotationSpeed = 100f;
+    private float runningSpeed = 10f;
+    private float walkingSpeed = 5f;
+    private float jumpForce = 5f;
+    private float jumpGravity = 1f;
+    private float fallGravity = 1f;
+    private float jumpHeight = 1f;
+
+    private PlayerStats playerStats;
     private Rigidbody rb;
     private MapGenerator mapGenerator;
     private float horizontal;
@@ -24,13 +27,15 @@ public class Controller : MonoBehaviour
     private float gravityScale;
     private float theWallSpeed = 6.5f;
 
-    public float groundCheckRadius = 0.1f;
-    public LayerMask groundLayer;
+	private float metersTravelt = 0;
+    private float metersTraveltThisFrame = 0;
 
+    private float groundCheckRadius = 0.1f;
 
     private void Start()
     {
         mapGenerator = gameController.GetComponent<MapGenerator>();
+        playerStats = GetComponent<PlayerStats>();
 
         rb = GetComponent<Rigidbody>();
         Cursor.visible = false;
@@ -45,11 +50,20 @@ public class Controller : MonoBehaviour
         RotateWithMouse();
         UpdateMoveSpeed();
         UpdateJumpAndGravity();
-    }
+
+        metersTraveltThisFrame = mapGenerator.loadedSections[7].transform.position.z - metersTravelt;
+
+        if (playerStats != null)
+        {
+			playerStats.metersTravelt += metersTraveltThisFrame;
+		}
+
+        metersTravelt = mapGenerator.loadedSections[7].transform.position.z;
+	}
 
     private void FixedUpdate()
     {
-        Vector3 movementDirection = transform.rotation * new Vector3(horizontal, 0f, vertical).normalized * moveSpeed;
+        Vector3 movementDirection = transform.rotation * new Vector3(horizontal, 0f, vertical).normalized * (moveSpeed * playerStats.speed);
         rb.MovePosition(rb.position + new Vector3(movementDirection.x, 0f, 0f) * Time.fixedDeltaTime);
 
         if (theWall.transform.position.z <= 150 || theWallSpeed + movementDirection.z > 0)
@@ -69,6 +83,8 @@ public class Controller : MonoBehaviour
             jump = false;
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
+
+
         rb.AddForce((gravityScale - 1) * Physics.gravity * rb.mass);
     }
     private void RotateWithMouse()

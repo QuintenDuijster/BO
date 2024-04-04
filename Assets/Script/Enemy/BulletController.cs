@@ -10,7 +10,7 @@ public class BulletController : MonoBehaviour
     void Start()
 	{
 		rb = GetComponent<Rigidbody>();
-		player = GameObject.FindWithTag("Player");
+		player = GameObject.FindWithTag("player");
 		transform.LookAt(player.transform);
 	}
 

@@ -9,7 +9,7 @@ public class Points : MonoBehaviour
     [SerializeField] private TMP_Text tmpTextComponent;
     [SerializeField] private Transform player;
     [SerializeField] private GameObject gameController;
-    private MapGenerator mapGenerator;
+
     private float metersTravelt = 0f;
     private ulong thousandMetersTravelt = 0;
     private string[] powerOf10 = new string[]
