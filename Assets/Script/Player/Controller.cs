@@ -55,6 +55,7 @@ public class Controller : MonoBehaviour
 
         if (playerStats != null)
         {
+            Debug.Log(metersTraveltThisFrame);
 			playerStats.metersTravelt += metersTraveltThisFrame;
 		}
 
@@ -66,10 +67,10 @@ public class Controller : MonoBehaviour
         Vector3 movementDirection = transform.rotation * new Vector3(horizontal, 0f, vertical).normalized * (moveSpeed * playerStats.speed);
         rb.MovePosition(rb.position + new Vector3(movementDirection.x, 0f, 0f) * Time.fixedDeltaTime);
 
-        if (theWall.transform.position.z <= 150 || theWallSpeed + movementDirection.z > 0)
-        {
-            theWall.transform.position -= new Vector3(0f, 0f, theWallSpeed + movementDirection.z) * Time.fixedDeltaTime;
-        }
+        //if (theWall.transform.position.z <= 150 || theWallSpeed + movementDirection.z > 0)
+        //{
+        //    theWall.transform.position -= new Vector3(0f, 0f, theWallSpeed + movementDirection.z) * Time.fixedDeltaTime;
+        //}
 
         foreach (GameObject section in mapGenerator.loadedSections)
         {

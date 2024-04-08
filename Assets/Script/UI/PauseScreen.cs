@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class PauseScreen : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    [SerializeField] private GameObject pauseScreen;
+
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            pauseScreen.SetActive(true);
+        }
+    }
+
+    public void resume()
+    {
+		pauseScreen.SetActive(false);
+	}
+
+    public void exit()
+    {
+
     }
 }
