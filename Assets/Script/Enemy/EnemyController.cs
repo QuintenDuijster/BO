@@ -15,11 +15,12 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        if (shootCooldown == 0 && (player.transform.position.z - (transform.position.z + transform.parent.position.z)) < 100f)
+        if (shootCooldown == 0/* && (player.transform.position.z - (transform.position.z + transform.parent.position.z)) < 100f*/)
         {
             Vector3 location = new Vector3 (transform.position.x, transform.position.y, transform.position.z + 4f);
             GameObject newBullet = Instantiate(Bullet, location, Quaternion.identity);
             newBullet.transform.parent = transform;
+            newBullet.transform.LookAt(player.transform);
             shootCooldown = Random.Range(minShootCooldown, maxShootCooldown);
         }
 

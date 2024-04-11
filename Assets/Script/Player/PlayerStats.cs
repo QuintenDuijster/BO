@@ -1,10 +1,12 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
 	[SerializeField] private TMP_Text tmpTextComponent;
+	[SerializeField] private TMP_Text tmpTextComponent_HP;
 	[SerializeField] private Transform player;
 	[SerializeField] private GameObject gameController;
 
@@ -26,31 +28,30 @@ public class PlayerStats : MonoBehaviour
 	internal int Damage { get; set; } = 1;
 	internal int speed { get; set; } = 1;
 
-	internal float passiveHealthRegenTimer;
-
 	void LateUpdate()
 	{
 		if (tmpTextComponent != null)
 		{
 			tmpTextComponent.text = Math.Floor(metersTravelt) + powerOf10[thousandMetersTravelt];
 		}
+
+		if (tmpTextComponent_HP != null)
+		{
+			tmpTextComponent_HP.text = $"HP: {health}";
+		}
 	}
 
 	internal void FixedUpdate()
 	{
-		if (passiveHealthRegenTimer <= 0 && health < maxHealth)
-		{
-			health += 0.1f;
-		}
-
+		Debug.Log(health);
 		if (health > maxHealth)
 		{
 			health = maxHealth;
 		}
 
-		if (passiveHealthRegenTimer > 0)
+		if (health <= 0)
 		{
-			passiveHealthRegenTimer -= Time.fixedDeltaTime;
+			SceneManager.LoadScene("DeathScreen");
 		}
 	}
 }

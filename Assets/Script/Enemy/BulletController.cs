@@ -23,8 +23,12 @@ public class BulletController : MonoBehaviour
 	{
 		if(other.tag != "Enemy")
 		{
+			if (other.tag == "player")
+			{
+				player.GetComponent<PlayerStats>().health--;
+			}
+
 			Destroy(gameObject);
 		}
-
 	}
 }
