@@ -14990,7 +14990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: 230}
+  m_AnchoredPosition: {x: -521, y: 230}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1332106016
@@ -15123,7 +15123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmpTextComponent: {fileID: 377012237}
-  tmpTextComponent_HP: {fileID: 0}
+  tmpTextComponent_HP: {fileID: 1332106016}
   player: {fileID: 1556817516}
   gameController: {fileID: 793894954}
 --- !u!114 &1556817513

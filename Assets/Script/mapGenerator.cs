@@ -60,8 +60,8 @@ public class MapGenerator : MonoBehaviour
 
 		for (int i = 0; i < amountOfEnemies; i++)
         {   
-            locationX = Section.transform.position.x + UnityEngine.Random.Range(-14, 14);
-            locationZ = Section.transform.position.z + UnityEngine.Random.Range(-9, 9);
+            locationX = Section.transform.position.x + UnityEngine.Random.Range(-10, 10);
+            locationZ = Section.transform.position.z + UnityEngine.Random.Range(-7.5f, 7.0f);
 			Vector3 newPosition = new Vector3(locationX, 1f, locationZ);
 			GameObject newEnemy = Instantiate(enemy, newPosition, Quaternion.identity);
 			newEnemy.transform.SetParent(Section.transform);
@@ -81,8 +81,8 @@ public class MapGenerator : MonoBehaviour
 			{
 				int boosterType = UnityEngine.Random.Range(0, 3);
 
-				locationX = Section.transform.position.x + UnityEngine.Random.Range(-14, 14);
-				locationZ = Section.transform.position.z + UnityEngine.Random.Range(-9, 9);
+				locationX = Section.transform.position.x + UnityEngine.Random.Range(-10, 10);
+				locationZ = Section.transform.position.z + UnityEngine.Random.Range(-7.5f, 7.0f);
 
 				Vector3 newPosition = new Vector3(locationX, 1f, locationZ);
 				GameObject newBooster = Instantiate(perFabBoosters[boosterType], newPosition, Quaternion.identity);

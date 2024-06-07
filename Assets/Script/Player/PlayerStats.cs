@@ -43,7 +43,6 @@ public class PlayerStats : MonoBehaviour
 
 	internal void FixedUpdate()
 	{
-		Debug.Log(health);
 		if (health > maxHealth)
 		{
 			health = maxHealth;
